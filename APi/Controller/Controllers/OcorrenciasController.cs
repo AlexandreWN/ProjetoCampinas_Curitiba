@@ -7,6 +7,25 @@ namespace Controller.Controllers;
 [Route("[controller]")]
 public class OcorrenciasController : ControllerBase
 {
+
+    [HttpGet]
+    [Route("getAll")]
+
+    public object getAllInformations()
+    {
+        var ocorrencias = Model.Ocorrencias.findAll();
+        return ocorrencias;
+    }
+
+    [HttpGet]
+    [Route("get/{id}")]
+    public object getInformations(int id)
+    {
+        Console.WriteLine(id);
+        var ocorrencias = Model.Ocorrencias.findID(id);
+        return ocorrencias;
+    }
+
     [HttpPost]
     [Route("register")]
     public object OccurrenceRegister([FromBody] Ocorrencias ocorrencias){
@@ -16,4 +35,18 @@ public class OcorrenciasController : ControllerBase
             Id = Id
         };
     }
+
+    [HttpDelete]
+    [Route("delete/{id}")]
+    public object deleteOcorrencias(int id)
+    {
+        Model.Ocorrencias.delete(id);
+        return new
+        {
+            status = "ok",
+            mensagem = "excluido"
+        };
+    }
+
+
 }

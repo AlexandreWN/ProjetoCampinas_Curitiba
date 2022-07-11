@@ -18,4 +18,44 @@ public class Ocorrencias
         }
         return Id;
     }
+
+    public static object findID(int id)
+    {
+        using (var context = new Context())
+        {
+            var ocorrencias = context.Ocorrencias.FirstOrDefault(d => d.Id == id);
+            return new
+            {
+                Nome = ocorrencias.Nome
+            };
+        }
+    }
+
+    public static List<object> findAll()
+    {
+        using (var context = new Context())
+        {
+            var ocorrencia = context.Ocorrencias;
+
+            List<object> ocorrencias = new List<object>();
+
+            foreach (var item in ocorrencia)
+            {
+                ocorrencias.Add(item);
+            }
+
+            return ocorrencias;
+        }
+    }
+
+    public static void delete(int id)
+    {
+        using (var context = new Context())
+        {
+            var ocorrencias = context.Ocorrencias.FirstOrDefault(i => i.Id == id);
+      
+            context.events.Remove(ocorrencias);
+            context.SaveChanges();
+        }
+    }
 }
