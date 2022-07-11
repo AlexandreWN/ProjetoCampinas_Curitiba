@@ -51,7 +51,7 @@ public class OcorrenciaController : ControllerBase
     }
 
     [HttpPut]
-    [Route("update/{id}")]
+    [Route("update/{Id}")]
     public object editOcorrencia([FromBody] Ocorrencia ocorrenciaDTO, int Id){
         Model.Ocorrencia.update(ocorrenciaDTO, Id);
         return new{
