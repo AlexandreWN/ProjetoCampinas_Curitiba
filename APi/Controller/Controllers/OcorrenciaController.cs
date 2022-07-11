@@ -10,7 +10,17 @@ public class OcorrenciaController : ControllerBase
     [HttpPost]
     [Route("register")]
     public object OccurrenceRegister([FromBody] Ocorrencia ocorrencia){
-        ocorrencia.save();
-        return this;
+        Console.WriteLine("Foi1");
+        var Id = ocorrencia.save();
+        Console.WriteLine("Foi2");
+        return new{
+            Id = Id,
+            Descricao = ocorrencia.Descricao,
+            DataEntrada = ocorrencia.DataEntrada,
+            DataSaida = ocorrencia.DataSaida,
+            Comprovante = ocorrencia.Comprovante,
+            Documento = ocorrencia.Documento,
+            Ocorrencias = ocorrencia.Ocorrencias
+        };
     }
 }
