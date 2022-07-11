@@ -58,7 +58,6 @@
         }
       }
     },
-<<<<<<< HEAD
     "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -70,19 +69,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\OLL2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-    "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj",
-        "projectName": "Model",
-        "projectPath": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\COC2CT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Model\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\COC2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> ce1a856995ee0a12a3317733cac8aa2828c3bc8d
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,13 +82,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-<<<<<<< HEAD
               "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj": {
                 "projectPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj"
-=======
-              "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj": {
-                "projectPath": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj"
->>>>>>> ce1a856995ee0a12a3317733cac8aa2828c3bc8d
               }
             }
           }
