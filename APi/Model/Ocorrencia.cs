@@ -43,4 +43,41 @@ public class Ocorrencia
             return "foi removido!";
         }
     }
+    public static void update(OcorrenciaDTO ocorrenciaDTO, int id)
+    {
+        using (var context = new Context())
+        {
+            var ocorrencia = context.Ocorrencia.FirstOrDefault(i => i.Id == id);
+            if(ocorrenciaDTO.Descricao != null)
+            {
+                ocorrencia.Descricao = ocorrenciaDTO.Descricao;
+            }
+            if(ocorrenciaDTO.DataEntrada != null)
+            {
+                ocorrencia.DataEntrada = ocorrenciaDTO.DataEntrada;
+            }
+            if(ocorrenciaDTO.DataSaida != null)
+            {
+                ocorrencia.DataSaida = ocorrenciaDTO.DataSaida;
+            }
+            if(ocorrenciaDTO.Comprovante != null)
+            {
+                ocorrencia.Comprovante = ocorrenciaDTO.Comprovante;
+            }
+            if(ocorrenciaDTO.Documento != null)
+            {
+                ocorrencia.Documento = ocorrenciaDTO.Documento;
+            }
+            if(ocorrenciaDTO.Ocorrencias != null)
+            {
+                ocorrencia.Ocorrencias = ocorrenciaDTO.Ocorrencias;
+            }
+            if(ocorrenciaDTO.Usuario != null)
+            {
+                ocorrencia.Usuario = ocorrenciaDTO.Usuario;
+            }
+
+            context.SaveChanges();
+        }
+    }
 }

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Model;
+using DTO;
 
 namespace Controller.Controllers;
 
@@ -7,6 +8,9 @@ namespace Controller.Controllers;
 [Route("[controller]")]
 public class OcorrenciaController : ControllerBase
 {
+
+
+
     [HttpPost]
     [Route("register")]
     public object OccurrenceRegister([FromBody] Ocorrencia ocorrencia){ 
@@ -27,5 +31,16 @@ public class OcorrenciaController : ControllerBase
     public object OcurrenceDelet(int id){
         var obj = Model.Ocorrencia.deleta(id);
         return obj;
+    }
+
+    [HttpPut]
+    [Route("update/{id}")]
+    public object editOcorrencia([FromBody] OcorrenciaDTO ocorrenciaDTO, int Id){
+        Model.Ocorrencia.update(ocorrenciaDTO, Id);
+        return new{
+            status = "ok",
+            mensagem = "deu boa"
+        };
+
     }
 }
