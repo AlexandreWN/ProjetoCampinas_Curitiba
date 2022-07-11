@@ -175,3 +175,5 @@ C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Console\obj\Debug\
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Console\obj\Debug\net6.0\Console.genruntimeconfig.cache
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Console\obj\Debug\net6.0\ref\Console.dll
 >>>>>>> cc52e1cabc346ddafdd81e6301311f0909859f39
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Console\bin\Debug\net6.0\DTO.dll
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Console\bin\Debug\net6.0\DTO.pdb

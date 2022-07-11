@@ -2002,19 +2002,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\OLL2CT\\.nuget\\packages\\": {}
+    "C:\\Users\\COC2CT\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
+      "projectUniqueName": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
       "projectName": "Controller",
-      "projectPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
-      "packagesPath": "C:\\Users\\OLL2CT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Controller\\obj\\",
+      "projectPath": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
+      "packagesPath": "C:\\Users\\COC2CT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Controller\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\OLL2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\COC2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2028,8 +2028,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj"
+            "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj"
             }
           }
         }
@@ -2070,5 +2070,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Controller\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
