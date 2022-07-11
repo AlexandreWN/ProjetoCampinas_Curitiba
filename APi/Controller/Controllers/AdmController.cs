@@ -15,12 +15,12 @@ public class AdmController : ControllerBase
     {
         var id = admin.save();
         return new{
-            nome = admin.Nome,
-            area = admin.Area,
-            dataNascimento = admin.DataNasc,
-            senha = admin.Senha,
-            email = admin.Email,
-            id = id
+            Nome = admin.Nome,
+            Area = admin.Area,
+            DataNascimento = admin.DataNasc,
+            Senha = admin.Senha,
+            Email = admin.Email,
+            Id = id
         };
     }
 

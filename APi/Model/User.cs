@@ -10,4 +10,9 @@ public class User
     public DateTime DataNasc { get; set; }
     public string Email { get; set; }
     public string Senha { get; set; }
+
+
+
+    public int save(){
+    }
 }

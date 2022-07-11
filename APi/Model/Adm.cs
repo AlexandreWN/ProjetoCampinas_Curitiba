@@ -14,7 +14,22 @@ public class Adm
 
 
     public int save(){
-        int id = 0;
-        using (var context = new Context)
+
+        int Id = 0;
+
+        using (var context = new Context()){
+            var admin = new Adm(){
+                Nome = this.Nome,
+                Senha = this.Senha,
+                Area = this.Area,
+                DataNasc = this.DataNasc,
+                Email = this.Email,
+                
+            };
+            context.Adm.Add(admin);
+            context.SaveChanges();
+            Id = admin.Id;
+        }
+        return Id;
     }
 }
