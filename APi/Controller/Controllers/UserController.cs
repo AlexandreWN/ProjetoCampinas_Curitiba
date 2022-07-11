@@ -27,8 +27,10 @@ public class UserController : ControllerBase
 
     [HttpGet]
     [Route("get/{edv}")]
+    
     public object getInformations(string edv)
     {
+        
         Console.WriteLine(edv);
         var user = Model.User.findID(edv);
         return user;
