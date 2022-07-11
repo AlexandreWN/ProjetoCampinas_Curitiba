@@ -29,6 +29,7 @@ import { RouterModule } from '@angular/router';
       {path: 'Ocorrencias', component: OcorrenciaComponent},
       {path: 'registerUsers', component: RegisterUserComponent},
       {path: 'ocorrenciaslist', component: OcorrenciaListComponent},
+      {path: 'historico', component: OcorrenciaHistoricoComponent }
     ])
   ],
   providers: [],
