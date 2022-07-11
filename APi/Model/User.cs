@@ -14,6 +14,23 @@ public class User
 
 
     public int save(){
+
+        int Id = 0;
+
+        using (var context = new Context()){
+            var user = new Adm(){
+                Nome = this.Nome,
+                Senha = this.Senha,
+                Area = this.Area,
+                DataNasc = this.DataNasc,
+                Email = this.Email,
+                
+            };
+            context.User.Add(user);
+            context.SaveChanges();
+            Id = user.Id;
+        }
+        return Id;
     }
     
 }
