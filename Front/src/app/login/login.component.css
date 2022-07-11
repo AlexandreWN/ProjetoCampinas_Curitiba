@@ -1,0 +1,31 @@
+.login{
+    text-align: center;
+
+}
+.loginInput{
+    size: 200px;
+    margin-bottom: 1%;
+}
+.passwordInput{
+    margin-bottom: 2%;
+}
+.buttonsInput{
+    
+}
+.btn1{
+    background-color: rgb(45, 167, 223);
+    border: none;
+    font-weight: bold;
+    padding: 0.4%;
+}
+.btn1:hover{
+    background-color: rgb(38, 142, 190);
+}
+.sub{
+    margin-top: 2%;
+    margin-bottom: 0;
+}
+.link{
+    color: gray;
+    cursor: pointer;
+}
