@@ -44,7 +44,8 @@ public class Context : DbContext
             entity.Property(a =>a.DataSaida).IsRequired();
             entity.Property(a =>a.Comprovante).IsRequired();
             entity.Property(a=>a.Documento).IsRequired();
-            entity.Property(a=>a.Ocorrencias).IsRequired();
+            entity.HasOne(a=>a.Ocorrencias);
+            entity.HasOne(a => a.Usuario);
 
         });
         modelBuilder.Entity<User>(entity =>{

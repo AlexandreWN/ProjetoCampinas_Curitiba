@@ -12,6 +12,8 @@ public class Ocorrencia
     public string Documento { get; set; }
     public Ocorrencias Ocorrencias { get; set; }
 
+    public User Usuario {get; set;}
+
 
     public int save(){
         using(var context = new Model.Context()){
