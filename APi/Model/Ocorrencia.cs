@@ -1,4 +1,5 @@
 ﻿using System;
+using DTO;
 using Microsoft.EntityFrameworkCore;
 
 namespace Model;
@@ -74,7 +75,7 @@ public class Ocorrencia
             return "foi removido!";
         }
     }
-    public static void update(OcorrenciaDTO ocorrenciaDTO, int id)
+    public static void update(Ocorrencia ocorrenciaDTO, int id)
     {
         using (var context = new Context())
         {
