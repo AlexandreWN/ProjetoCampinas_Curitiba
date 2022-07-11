@@ -597,6 +597,16 @@
             "rid": "win"
           }
         }
+      },
+      "DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DTO.dll": {}
+        }
       }
     }
   },
@@ -1762,67 +1772,34 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "DTO/1.0.0": {
+      "type": "project",
+      "path": "../DTO/DTO.csproj",
+      "msbuildProject": "../DTO/DTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DTO >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.6"
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\OLL2CT\\.nuget\\packages\\": {}
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "C:\\Users\\COC2CT\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\OLL2CT\\.nuget\\packages\\": {}
->>>>>>> cc52e1cabc346ddafdd81e6301311f0909859f39
-=======
-    "C:\\Users\\nia1ct\\.nuget\\packages\\": {}
->>>>>>> 0809402a51b2bd041036675655a0b84ed0100c50
->>>>>>> 5b644a91acc397c1b0121d90f8c1b6f19e1daf7b
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj",
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj",
-      "projectName": "Model",
-      "projectPath": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj",
-      "packagesPath": "C:\\Users\\COC2CT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Model\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\COC2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj",
-=======
-      "projectUniqueName": "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj",
->>>>>>> 0809402a51b2bd041036675655a0b84ed0100c50
->>>>>>> 5b644a91acc397c1b0121d90f8c1b6f19e1daf7b
       "projectName": "Model",
       "projectPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj",
       "packagesPath": "C:\\Users\\OLL2CT\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\OLL2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-<<<<<<< HEAD
-        "C:\\Users\\OLL2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> cc52e1cabc346ddafdd81e6301311f0909859f39
-=======
-        "C:\\Users\\nia1ct\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 0809402a51b2bd041036675655a0b84ed0100c50
->>>>>>> 5b644a91acc397c1b0121d90f8c1b6f19e1daf7b
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1835,7 +1812,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj": {
+              "projectPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1875,5 +1856,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Model\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

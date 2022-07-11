@@ -5,36 +5,12 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-<<<<<<< HEAD
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\OLL2CT\.nuget\packages\</NuGetPackageFolders>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\COC2CT\.nuget\packages\</NuGetPackageFolders>
-=======
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\OLL2CT\.nuget\packages\</NuGetPackageFolders>
->>>>>>> cc52e1cabc346ddafdd81e6301311f0909859f39
-=======
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\nia1ct\.nuget\packages\</NuGetPackageFolders>
->>>>>>> 0809402a51b2bd041036675655a0b84ed0100c50
->>>>>>> 5b644a91acc397c1b0121d90f8c1b6f19e1daf7b
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.2.1</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-<<<<<<< HEAD
     <SourceRoot Include="C:\Users\OLL2CT\.nuget\packages\" />
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <SourceRoot Include="C:\Users\COC2CT\.nuget\packages\" />
-=======
-    <SourceRoot Include="C:\Users\OLL2CT\.nuget\packages\" />
->>>>>>> cc52e1cabc346ddafdd81e6301311f0909859f39
-=======
-    <SourceRoot Include="C:\Users\nia1ct\.nuget\packages\" />
->>>>>>> 0809402a51b2bd041036675655a0b84ed0100c50
->>>>>>> 5b644a91acc397c1b0121d90f8c1b6f19e1daf7b
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\6.0.6\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\6.0.6\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props')" />
