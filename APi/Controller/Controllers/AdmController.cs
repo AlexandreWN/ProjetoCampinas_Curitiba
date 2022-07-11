@@ -8,7 +8,6 @@ namespace Controller.Controllers;
 public class AdmController : ControllerBase
 {
     
-
     [HttpPost]
     [Route("register")]
     public object registerAdmin([FromBody] Adm admin)
