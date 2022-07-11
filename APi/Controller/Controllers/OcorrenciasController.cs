@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Model;
+using DTO;
 
 namespace Controller.Controllers;
 
@@ -35,10 +36,9 @@ public class OcorrenciasController : ControllerBase
             Id = Id
         };
     }
-<<<<<<< HEAD
     [HttpPut]
     [Route("update")]
-    public object editOcorrencias([FromBody] Ocorrencias ocorrencias, int Id){
+    public object editOcorrencias([FromBody] OcorrenciasDTO ocorrencias, int Id){
         Ocorrencias.update(ocorrencias, Id);
         return new{
             status = "ok",
@@ -46,7 +46,6 @@ public class OcorrenciasController : ControllerBase
         };
 
     }
-=======
 
     [HttpDelete]
     [Route("delete/{id}")]
@@ -61,5 +60,4 @@ public class OcorrenciasController : ControllerBase
     }
 
 
->>>>>>> e26db4abc71b0c349cb5ea23f3388b0fbeffad47
 }
