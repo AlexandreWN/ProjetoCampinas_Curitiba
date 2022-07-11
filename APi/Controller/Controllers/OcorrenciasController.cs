@@ -37,9 +37,9 @@ public class OcorrenciasController : ControllerBase
         };
     }
     [HttpPut]
-    [Route("update")]
-    public object editOcorrencias([FromBody] OcorrenciasDTO ocorrencias, int Id){
-        Ocorrencias.update(ocorrencias, Id);
+    [Route("update/{Id}")]
+    public object editOcorrencias([FromBody] OcorrenciasDTO ocorrenciasDTO, int Id){
+        Model.Ocorrencias.update(ocorrenciasDTO, Id);
         return new{
             status = "ok",
             mensagem = "deu boa"
