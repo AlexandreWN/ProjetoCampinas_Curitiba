@@ -13,7 +13,7 @@ public class Context : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
 
-        optionsBuilder.UseSqlServer("Data Source=CTPC3616;Initial Catalog=db_teste;Integrated Security= True;");
+        optionsBuilder.UseSqlServer("Data Source=" + Environment.MachineName + ";Initial Catalog=ProjetoOcorrencias; Integrated Security=True");
 
     }
 
