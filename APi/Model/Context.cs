@@ -26,6 +26,7 @@ public class Context : DbContext
             entity.HasKey(a => a.Id);
             entity.Property(a => a.Nome).IsRequired();
             entity.Property(a => a.Area).IsRequired();
+            entity.Property(a => a.Edv).IsRequired();
             entity.Property(a =>a.DataNasc).IsRequired();
             entity.Property(a =>a.Email).IsRequired();
             entity.Property(a=>a.Senha).IsRequired();
@@ -53,6 +54,7 @@ public class Context : DbContext
             entity.HasKey(a => a.Id);
             entity.Property(a => a.Nome).IsRequired();
             entity.Property(a => a.Area).IsRequired();
+            entity.Property(a => a.Edv).IsRequired();
             entity.Property(a =>a.DataNasc).IsRequired();
             entity.Property(a =>a.Email).IsRequired();
             entity.Property(a=>a.Senha).IsRequired();
