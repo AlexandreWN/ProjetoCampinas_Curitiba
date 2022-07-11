@@ -23,8 +23,15 @@ public class OcorrenciaController : ControllerBase
     [Route("get/{id}")]
     public object getInformations(int id)
     {
-        Console.WriteLine(id);
         var ocorrencia = Model.Ocorrencia.findID(id);
+        return ocorrencia;
+    }
+
+    [HttpGet]
+    [Route("getEdv/{edv}")]
+    public object getInformationsByEDV(string edv)
+    {
+        var ocorrencia = Model.Ocorrencia.findEDV(edv);
         return ocorrencia;
     }
 

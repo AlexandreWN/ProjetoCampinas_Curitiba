@@ -49,6 +49,20 @@ public class Ocorrencia
         }
     }
 
+    public static List<object> findEDV(string edv)
+    {
+        using (var context = new Context())
+        {
+            var ocorrencia = context.Ocorrencia.Where(i => i.Usuario.Edv == edv).Include(p => p.Ocorrencias).Include(p => p.Usuario);
+            List<Object> ocorrencias = new List<object>();
+
+            foreach(var ocor in ocorrencia){
+                ocorrencias.Add(ocor);
+            }
+            return ocorrencias;
+        }
+    }
+
     public static List<object> findAll()
     {
         using (var context = new Context())
