@@ -37,3 +37,6 @@ C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\ne
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.pdb
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\ref\Model.dll
 >>>>>>> cc52e1cabc346ddafdd81e6301311f0909859f39
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\DTO.dll
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\DTO.pdb
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.csproj.CopyComplete

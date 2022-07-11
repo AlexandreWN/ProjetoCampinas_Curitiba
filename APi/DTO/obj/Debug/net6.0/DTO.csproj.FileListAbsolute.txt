@@ -1,0 +1,12 @@
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\DTO\bin\Debug\net6.0\DTO.deps.json
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\DTO\bin\Debug\net6.0\DTO.dll
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\DTO\bin\Debug\net6.0\DTO.pdb
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\DTO.csproj.AssemblyReference.cache
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\DTO.AssemblyInfoInputs.cache
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\DTO.AssemblyInfo.cs
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\DTO.dll
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\refint\DTO.dll
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\DTO.pdb
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\ref\DTO.dll

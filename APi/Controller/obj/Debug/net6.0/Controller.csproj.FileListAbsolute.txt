@@ -120,3 +120,13 @@ C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Controller\obj\Deb
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.pdb
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.genruntimeconfig.cache
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\ref\Controller.dll
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.csproj.AssemblyReference.cache
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.AssemblyInfoInputs.cache
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.AssemblyInfo.cs
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.csproj.CoreCompileInputs.cache
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.dll
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\refint\Controller.dll
+C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.pdb

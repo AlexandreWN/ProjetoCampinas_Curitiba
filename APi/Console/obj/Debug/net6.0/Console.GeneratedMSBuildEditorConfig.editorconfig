@@ -7,12 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Console
-<<<<<<< HEAD
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Console\
-=======
-build_property.ProjectDir = C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Console\
->>>>>>> cc52e1cabc346ddafdd81e6301311f0909859f39
-=======
-build_property.ProjectDir = C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Console\
->>>>>>> 0809402a51b2bd041036675655a0b84ed0100c50
