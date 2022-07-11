@@ -13,7 +13,7 @@ public class Context : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
 
-        optionsBuilder.UseSqlServer("Data Source=CTPC3616;Initial Catalog=db_teste;Integrated Security= True;");
+        optionsBuilder.UseSqlServer("Data Source=" + Environment.MachineName + ";Initial Catalog=ProjetoOcorrencias; Integrated Security=True");
 
     }
 
@@ -23,7 +23,7 @@ public class Context : DbContext
 
         modelBuilder.Entity<Adm>(entity =>{
 
-            entity.HasKey(a => a.id);
+            entity.HasKey(a => a.Id);
             entity.Property(a => a.Nome).IsRequired();
             entity.Property(a => a.Area).IsRequired();
             entity.Property(a =>a.DataNasc).IsRequired();
@@ -33,23 +33,24 @@ public class Context : DbContext
         });
         modelBuilder.Entity<Ocorrencias>(entity =>{
 
-            entity.HasKey(a => a.id);
+            entity.HasKey(a => a.Id);
             entity.Property(a => a.Nome).IsRequired();
         });
         modelBuilder.Entity<Ocorrencia>(entity =>{
 
-            entity.HasKey(a => a.id);
+            entity.HasKey(a => a.Id);
             entity.Property(a => a.Descricao).IsRequired();
             entity.Property(a => a.DataEntrada).IsRequired();
-            entity.Property(a =>a.DatSaida).IsRequired();
+            entity.Property(a =>a.DataSaida).IsRequired();
             entity.Property(a =>a.Comprovante).IsRequired();
             entity.Property(a=>a.Documento).IsRequired();
-            entity.Property(a=>a.Ocorrencias).IsRequired();
+            entity.HasOne(a=>a.Ocorrencias);
+            entity.HasOne(a => a.Usuario);
 
         });
         modelBuilder.Entity<User>(entity =>{
 
-            entity.HasKey(a => a.id);
+            entity.HasKey(a => a.Id);
             entity.Property(a => a.Nome).IsRequired();
             entity.Property(a => a.Area).IsRequired();
             entity.Property(a =>a.DataNasc).IsRequired();

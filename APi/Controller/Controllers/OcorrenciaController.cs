@@ -7,5 +7,10 @@ namespace Controller.Controllers;
 [Route("[controller]")]
 public class OcorrenciaController : ControllerBase
 {
-    
+    [HttpPost]
+    [Route("register")]
+    public object OccurrenceRegister([FromBody] Ocorrencia ocorrencia){
+        ocorrencia.save();
+        return this;
+    }
 }
