@@ -100,10 +100,6 @@ public class Ocorrencia
             {
                 ocorrencia.Documento = ocorrenciaDTO.Documento;
             }
-            if(ocorrenciaDTO.Ocorrencias != null)
-            {
-                ocorrencia.Ocorrencias = ocorrenciaDTO.Ocorrencias;
-            }
             context.SaveChanges();
         }
     }
