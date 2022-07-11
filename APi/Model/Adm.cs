@@ -10,4 +10,11 @@ public class Adm
     public DateTime DataNasc { get; set; }
     public string Email { get; set; }
     public string Senha { get; set; }
+
+
+
+    public int save(){
+        int id = 0;
+        using (var context = new Context)
+    }
 }
