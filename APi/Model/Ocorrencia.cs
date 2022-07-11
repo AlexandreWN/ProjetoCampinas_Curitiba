@@ -104,11 +104,6 @@ public class Ocorrencia
             {
                 ocorrencia.Ocorrencias = ocorrenciaDTO.Ocorrencias;
             }
-            if(ocorrenciaDTO.Usuario != null)
-            {
-                ocorrencia.Usuario = ocorrenciaDTO.Usuario;
-            }
-
             context.SaveChanges();
         }
     }
