@@ -18,7 +18,7 @@ public class User
         int Id = 0;
 
         using (var context = new Context()){
-            var user = new Adm(){
+            var user = new User(){
                 Nome = this.Nome,
                 Senha = this.Senha,
                 Area = this.Area,
