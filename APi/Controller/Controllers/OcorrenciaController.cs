@@ -9,10 +9,8 @@ public class OcorrenciaController : ControllerBase
 {
     [HttpPost]
     [Route("register")]
-    public object OccurrenceRegister([FromBody] Ocorrencia ocorrencia){
-        Console.WriteLine("Foi1");
-        var Id = ocorrencia.save();
-        Console.WriteLine("Foi2");
+    public object OccurrenceRegister([FromBody] Ocorrencia ocorrencia){ 
+        var Id = ocorrencia.save(ocorrencia.Usuario.Id, ocorrencia.Ocorrencias.Id);
         return new{
             Id = Id,
             Descricao = ocorrencia.Descricao,
@@ -22,5 +20,12 @@ public class OcorrenciaController : ControllerBase
             Documento = ocorrencia.Documento,
             Ocorrencias = ocorrencia.Ocorrencias
         };
+    }
+
+    [HttpDelete]
+    [Route("del/{id}")]
+    public object OcurrenceDelet(int id){
+        var obj = Model.Ocorrencia.deleta(id);
+        return obj;
     }
 }

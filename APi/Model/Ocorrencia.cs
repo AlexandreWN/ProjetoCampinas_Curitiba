@@ -14,12 +14,10 @@ public class Ocorrencia
     public User Usuario {get; set;}
 
 
-    public int save(){
+    public int save(int userId, int ocorrenciaId){
         using(var context = new Model.Context()){
-
-            var ocorrencias = context.Ocorrencias.FirstOrDefault(o => o.Id == Id);
-            var usuario = context.User.FirstOrDefault(o => o.Id == Id);
-
+            var ocorrencias = context.Ocorrencias.FirstOrDefault(o => o.Id == ocorrenciaId);
+            var usuario = context.User.FirstOrDefault(o => o.Id == userId);
             var obj = new Model.Ocorrencia{
                 Descricao = this.Descricao,
                 DataEntrada = this.DataEntrada,
@@ -34,5 +32,15 @@ public class Ocorrencia
             Id = obj.Id;
         }
         return Id;
+    }
+
+    public static string deleta(int  Id){
+        using(var context = new Context())
+        {
+            var ocorrencia = context.Ocorrencia.FirstOrDefault(o => o.Id == Id);
+            context.Remove(ocorrencia);  
+            context.SaveChanges();
+            return "foi removido!";
+        }
     }
 }
