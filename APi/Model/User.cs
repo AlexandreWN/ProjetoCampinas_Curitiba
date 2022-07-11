@@ -35,5 +35,38 @@ public class User
         }
         return Id;
     }
+
+    public static object findID(string edv)
+    {
+        using (var context = new Context())
+        {
+            var users = context.User.FirstOrDefault(d => d.Edv == edv);
+            return new
+            {
+                Nome = users.Nome,
+                Edv = users.Edv,
+                Senha = users.Senha,
+                Area = users.Area,
+                DataNasc = users.DataNasc,
+                Email = users.Email,
+            };
+        }
+    }
     
+    public static List<object> findAll()
+    {
+        using (var context = new Context())
+        {
+            var user = context.User;
+
+            List<object> users = new List<object>();
+
+            foreach (var item in user)
+            {
+                users.Add(item);
+            }
+
+            return users;
+        }
+    }
 }

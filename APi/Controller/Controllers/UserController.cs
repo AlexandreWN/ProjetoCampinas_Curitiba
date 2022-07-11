@@ -34,4 +34,13 @@ public class UserController : ControllerBase
         return user;
     }
 
+    [HttpGet]
+    [Route("getAll")]
+
+    public object getAllInformations()
+    {
+        var users = Model.User.findAll();
+        return users;
+    }
+
 }
