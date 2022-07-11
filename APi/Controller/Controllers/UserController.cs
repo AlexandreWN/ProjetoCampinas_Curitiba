@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Model;
+using System;
 
 namespace Controller.Controllers;
 
@@ -7,5 +8,5 @@ namespace Controller.Controllers;
 [Route("[controller]")]
 public class UserController : ControllerBase
 {
-    
+
 }
