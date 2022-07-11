@@ -34,6 +34,37 @@ public class Ocorrencia
         return Id;
     }
 
+    public static List<object> findID(int id)
+    {
+        using (var context = new Context())
+        {
+            var ocorrencia = context.Ocorrencia.Where(i => i.Id == id).Include(p => p.Ocorrencias).Include(p => p.Usuario);
+            List<Object> ocorrencias = new List<object>();
+
+            foreach(var ocor in ocorrencia){
+                ocorrencias.Add(ocor);
+            }
+            return ocorrencias;
+        }
+    }
+
+    public static List<object> findAll()
+    {
+        using (var context = new Context())
+        {
+            var ocorrencia = context.Ocorrencia.Include(p => p.Usuario).Include(p => p.Ocorrencias);
+
+            List<object> ocorrencias = new List<object>();
+
+            foreach (var item in ocorrencia)
+            {
+                ocorrencias.Add(item);
+            }
+
+            return ocorrencias;
+        }
+    }
+
     public static string deleta(int  Id){
         using(var context = new Context())
         {
