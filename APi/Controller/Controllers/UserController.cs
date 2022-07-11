@@ -45,4 +45,15 @@ public class UserController : ControllerBase
         return users;
     }
 
+    [HttpPut]
+    [Route("update")]
+    public object editOcorrencias([FromBody] Ocorrencias ocorrencias, int Id){
+        Ocorrencias.update(ocorrencias, Id);
+        return new{
+            status = "ok",
+            mensagem = "deu boa"
+        };
+
+    }
+
 }

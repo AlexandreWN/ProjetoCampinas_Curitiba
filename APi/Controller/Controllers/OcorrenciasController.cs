@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Model;
+using DTO;
 
 namespace Controller.Controllers;
 
@@ -34,6 +35,16 @@ public class OcorrenciasController : ControllerBase
             Nome = ocorrencias.Nome,
             Id = Id
         };
+    }
+    [HttpPut]
+    [Route("update")]
+    public object editOcorrencias([FromBody] OcorrenciasDTO ocorrencias, int Id){
+        Ocorrencias.update(ocorrencias, Id);
+        return new{
+            status = "ok",
+            mensagem = "deu boa"
+        };
+
     }
 
     [HttpDelete]

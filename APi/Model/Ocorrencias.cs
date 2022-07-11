@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
+using DTO;
 
 namespace Model;
 public class Ocorrencias
@@ -55,6 +56,19 @@ public class Ocorrencias
             var ocorrencias = context.Ocorrencias.FirstOrDefault(i => i.Id == id);
       
             context.Ocorrencias.Remove(ocorrencias);
+            context.SaveChanges();
+        }
+    }
+    public static void update(OcorrenciasDTO ocorrenciasDTO, int id)
+    {
+        using (var context = new Context())
+        {
+            var ocorrencias = context.Ocorrencias.FirstOrDefault(i => i.Id == Id);
+            if(ocorrenciasDTO.Nome != null)
+            {
+                ocorrencias.Nome = ocorrenciasDTO.Nome;
+            }
+
             context.SaveChanges();
         }
     }

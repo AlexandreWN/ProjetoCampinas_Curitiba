@@ -1,7 +1,27 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Console\\Console.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Console\\Console.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Console\\Console.csproj",
+        "projectName": "Console",
+        "projectPath": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Console\\Console.csproj",
+        "packagesPath": "C:\\Users\\COC2CT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Console\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\COC2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Console\\Console.csproj": {}
+=======
     "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\Console\\Console.csproj": {}
+>>>>>>> 0809402a51b2bd041036675655a0b84ed0100c50
   },
   "projects": {
     "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\Console\\Console.csproj": {
@@ -14,7 +34,12 @@
         "outputPath": "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\Console\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
+          "C:\\Users\\OLL2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> cc52e1cabc346ddafdd81e6301311f0909859f39
+=======
           "C:\\Users\\nia1ct\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 0809402a51b2bd041036675655a0b84ed0100c50
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +53,18 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+              "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj"
+=======
+              "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj"
+>>>>>>> cc52e1cabc346ddafdd81e6301311f0909859f39
+=======
               "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
                 "projectPath": "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj"
+>>>>>>> 0809402a51b2bd041036675655a0b84ed0100c50
               }
             }
           }
@@ -62,7 +97,24 @@
         }
       }
     },
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\COC2CT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\COC2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
+=======
     "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
+>>>>>>> 0809402a51b2bd041036675655a0b84ed0100c50
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj",
@@ -72,7 +124,12 @@
         "outputPath": "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
+          "C:\\Users\\OLL2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> cc52e1cabc346ddafdd81e6301311f0909859f39
+=======
           "C:\\Users\\nia1ct\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 0809402a51b2bd041036675655a0b84ed0100c50
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
