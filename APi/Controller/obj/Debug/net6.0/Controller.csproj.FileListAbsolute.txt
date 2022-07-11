@@ -183,3 +183,5 @@ C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\o
 C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.csproj.CopyComplete
 C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.genruntimeconfig.cache
 C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\ref\Controller.dll
+C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Controller\bin\Debug\net6.0\DTO.dll
+C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Controller\bin\Debug\net6.0\DTO.pdb

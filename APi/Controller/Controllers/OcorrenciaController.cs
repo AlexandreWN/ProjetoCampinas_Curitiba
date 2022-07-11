@@ -10,6 +10,23 @@ public class OcorrenciaController : ControllerBase
 {
 
 
+    [HttpGet]
+    [Route("getAll")]
+
+    public object getAllInformations()
+    {
+        var ocorrencia = Model.Ocorrencia.findAll();
+        return ocorrencia;
+    }
+
+    [HttpGet]
+    [Route("get/{id}")]
+    public object getInformations(int id)
+    {
+        Console.WriteLine(id);
+        var ocorrencia = Model.Ocorrencia.findID(id);
+        return ocorrencia;
+    }
 
     [HttpPost]
     [Route("register")]
