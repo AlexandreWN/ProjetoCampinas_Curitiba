@@ -17,6 +17,7 @@ public class AdmController : ControllerBase
             Nome = admin.Nome,
             Area = admin.Area,
             DataNascimento = admin.DataNasc,
+            Edv = admin.Edv,
             Senha = admin.Senha,
             Email = admin.Email,
             Id = id

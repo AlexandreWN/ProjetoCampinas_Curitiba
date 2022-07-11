@@ -16,6 +16,7 @@ public class UserController : ControllerBase
             Nome = user.Nome,
             Area = user.Area,
             Datanasc = user.DataNasc,
+            Edv = user.Edv,
             Email = user.Email,
             Senha = user.Senha,
             Id = Id
@@ -23,4 +24,14 @@ public class UserController : ControllerBase
         };
 
     }
+
+    [HttpGet]
+    [Route("get/{edv}")]
+    public object getInformations(string edv)
+    {
+        Console.WriteLine(edv);
+        var user = Model.User.findID(edv);
+        return user;
+    }
+
 }
