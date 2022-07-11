@@ -114,7 +114,6 @@ public class Ocorrencia
             {
                 ocorrencia.Documento = ocorrenciaDTO.Documento;
             }
-
             context.SaveChanges();
         }
     }
