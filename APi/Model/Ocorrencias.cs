@@ -54,7 +54,7 @@ public class Ocorrencias
         {
             var ocorrencias = context.Ocorrencias.FirstOrDefault(i => i.Id == id);
       
-            context.events.Remove(ocorrencias);
+            context.Ocorrencias.Remove(ocorrencias);
             context.SaveChanges();
         }
     }
