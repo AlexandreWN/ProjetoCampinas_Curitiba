@@ -6,6 +6,7 @@ public class Adm
 {
     public int Id { get; set; }
     public string Nome { get; set; }
+    public string Edv {get; set;}
     public string Area { get; set; }
     public DateTime DataNasc { get; set; }
     public string Email { get; set; }
@@ -20,6 +21,7 @@ public class Adm
         using (var context = new Context()){
             var admin = new Adm(){
                 Nome = this.Nome,
+                Edv = this.Edv,
                 Senha = this.Senha,
                 Area = this.Area,
                 DataNasc = this.DataNasc,
