@@ -50,6 +50,10 @@ public class User
             };
         }
     }
+
+    // public static int find(int id){
+        
+    // }
     
     public static List<object> findAll()
     {

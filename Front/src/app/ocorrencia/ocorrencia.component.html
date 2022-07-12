@@ -8,11 +8,9 @@
    <div class="client">
     <form>
         <div class="inputsRegister">
-            <select class="form-select form-select" aria-label="Default select example">
+            <select id="ocorrencia" class="form-select form-select" aria-label="Default select example">
                 <option selected>Selecione o tipo de ocorrencia</option>
-                <option value="falta">Falta</option>
-                <option value="atraso">Atraso</option>
-                <option value="saida_antecipada">Saida Antecipada</option>
+                <option *ngFor="let ocorrencia of ocorrencias" value="{{ocorrencia.id}}">{{ocorrencia.nome}}</option>
               </select>
         </div>
 
@@ -48,6 +46,6 @@
    </div>
 
     <div class="btnss">
-        <div  class="btnAddress2"><button class="btn" type="button" >Salvar</button></div>
+        <div  class="btnAddress2"><button class="btn" type="button" (click)="register()">Salvar</button></div>
     </div>
 </div>

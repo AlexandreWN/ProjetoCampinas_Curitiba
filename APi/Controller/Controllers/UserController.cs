@@ -50,6 +50,15 @@ public class UserController : ControllerBase
     }
 
     [HttpGet]
+    [Route("getId")]
+    
+    public int getInformations(int id)
+    {
+        id = Lib.GetIdFromRequest(Request.Headers["Authorization"].ToString());
+        return id;
+    }
+
+    [HttpGet]
     [Route("getAll")]
 
     public object getAllInformations()
