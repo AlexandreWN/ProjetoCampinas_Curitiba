@@ -347,12 +347,48 @@ table {
     justify-content: center;
   }
 
+<<<<<<< HEAD
+=======
+  .inputsRegisterSaida{
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .inputsRegisterData{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .inputsRegisterHora{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+
+>>>>>>> a8bfac9e5f847afd9ccc5ee7eddbee5b2a52ac7a
   .inputsRegister input{
     width: 40%;
     padding: 5px;
     margin-top: 15px;
   }
 
+<<<<<<< HEAD
+=======
+  .inputsRegisterData input{
+    width: 80%;
+    padding: 5px;
+    margin-top: 15px;
+  }
+
+  .inputsRegisterHora input{
+    width: 80%;
+    padding: 5px;
+    margin-top: 15px;
+  }
+
+>>>>>>> a8bfac9e5f847afd9ccc5ee7eddbee5b2a52ac7a
   .inputsRegister select{
     width: 40%;
     padding: 5px;

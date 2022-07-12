@@ -2809,20 +2809,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\COC2CT\\.nuget\\packages\\": {}
+    "C:\\Users\\VIN1CT\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
+      "projectUniqueName": "C:\\Users\\VIN1CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
       "projectName": "Controller",
-      "projectPath": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
-      "packagesPath": "C:\\Users\\COC2CT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Controller\\obj\\",
+      "projectPath": "C:\\Users\\VIN1CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
+      "packagesPath": "C:\\Users\\VIN1CT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\VIN1CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Controller\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\COC2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\VIN1CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -2835,8 +2843,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\COC2CT\\Desktop\\Justificativas\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj"
+            "C:\\Users\\VIN1CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\VIN1CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj"
             }
           }
         }

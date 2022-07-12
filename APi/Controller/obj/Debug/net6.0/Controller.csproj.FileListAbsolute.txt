@@ -253,8 +253,11 @@ C:\Users\VIN1CT\Desktop\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0
 C:\Users\VIN1CT\Desktop\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.csproj.CopyComplete
 C:\Users\VIN1CT\Desktop\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.genruntimeconfig.cache
 C:\Users\VIN1CT\Desktop\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\ref\Controller.dll
+<<<<<<< HEAD
 C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Controller\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+=======
+>>>>>>> a8bfac9e5f847afd9ccc5ee7eddbee5b2a52ac7a
