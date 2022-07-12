@@ -50,6 +50,28 @@ public class User
             };
         }
     }
+
+    public static object findByID(int id)
+    {
+        using (var context = new Context())
+        {
+            var users = context.User.FirstOrDefault(d => d.Id == id);
+            return new
+            {
+                Nome = users.Nome,
+                Edv = users.Edv,
+                Senha = users.Senha,
+                Area = users.Area,
+                DataNasc = users.DataNasc,
+                Email = users.Email,
+                Id = id
+            };
+        }
+    }
+
+    // public static int find(int id){
+        
+    // }
     
     public static List<object> findAll()
     {
