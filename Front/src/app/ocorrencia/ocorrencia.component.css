@@ -348,7 +348,10 @@ table {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> a8bfac9e5f847afd9ccc5ee7eddbee5b2a52ac7a
   .inputsRegisterSaida{
     justify-self: center;
     display: flex;
@@ -367,6 +370,9 @@ table {
     justify-content: center;
   }
 
+<<<<<<< HEAD
+>>>>>>> a8bfac9e5f847afd9ccc5ee7eddbee5b2a52ac7a
+=======
 >>>>>>> a8bfac9e5f847afd9ccc5ee7eddbee5b2a52ac7a
   .inputsRegister input{
     width: 40%;
@@ -375,7 +381,10 @@ table {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> a8bfac9e5f847afd9ccc5ee7eddbee5b2a52ac7a
   .inputsRegisterData input{
     width: 80%;
     padding: 5px;
@@ -388,6 +397,9 @@ table {
     margin-top: 15px;
   }
 
+<<<<<<< HEAD
+>>>>>>> a8bfac9e5f847afd9ccc5ee7eddbee5b2a52ac7a
+=======
 >>>>>>> a8bfac9e5f847afd9ccc5ee7eddbee5b2a52ac7a
   .inputsRegister select{
     width: 40%;
