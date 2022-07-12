@@ -314,9 +314,9 @@ table {
   .register{
     width: 90%;
     height: 100%;
-    border: 0.5px solid gray;
+    /* border: 0.5px solid gray; */
     padding: 5px;
-    margin: 5% auto 0 auto;
+    margin: 2% auto 0 auto;
   }
 
   .registerStore{
@@ -333,7 +333,7 @@ table {
   }
 
   .client{
-    width: 42%;
+    width: 100%;
     float: left;
   }
 
@@ -349,7 +349,7 @@ table {
   }
 
   .inputsRegister input{
-    width: 60%;
+    width: 40%;
     padding: 5px;
     margin-top: 15px;
   }
@@ -375,8 +375,7 @@ table {
     display: flex;
     justify-content: center;
     height: 10%;
-    padding: 5px;
-    margin-top: 4%;
+    padding: 5px;;
   }
 
   .titleRegister h1{
@@ -435,13 +434,15 @@ table {
   }
 
   .btnss .btnAddress1{
-    width: 45%;
+    width: 30%;
+    margin-top: 3%;
     display: flex;
     justify-content: center;  
   }
  
   .btnss .btnAddress2{
-    width: 45%;
+    width: 30%;
+    margin-top: 3%;
     display: flex;
     justify-content: center;  
   }
