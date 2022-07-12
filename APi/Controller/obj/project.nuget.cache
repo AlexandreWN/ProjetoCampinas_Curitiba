@@ -2,6 +2,7 @@
   "version": 2,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "HppoKfikl9eWIYsFNwyPbWiIy909hZmLzpz5FE6K05HgFXx/H0b8c0K2k/YRySmlxwwcso64Qgy4giezGtkvjw==",
 =======
   "dgSpecHash": "575hylcaTybTj18/15+cvrsvSebWsWdO1Iid+H7cI1rpTR1crCVwPjKKZzFTZUAlVwaNAlGSY03gD/SuHn8soA==",
@@ -90,6 +91,12 @@
   "projectFilePath": "C:\\Users\\VIN1CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
   "expectedPackageFiles": [
 >>>>>>> a8bfac9e5f847afd9ccc5ee7eddbee5b2a52ac7a
+=======
+  "dgSpecHash": "575hylcaTybTj18/15+cvrsvSebWsWdO1Iid+H7cI1rpTR1crCVwPjKKZzFTZUAlVwaNAlGSY03gD/SuHn8soA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\VIN1CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
+  "expectedPackageFiles": [
+>>>>>>> a8bfac9e5f847afd9ccc5ee7eddbee5b2a52ac7a
     "C:\\Users\\VIN1CT\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\VIN1CT\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\VIN1CT\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
@@ -164,6 +171,9 @@
     "C:\\Users\\VIN1CT\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
     "C:\\Users\\VIN1CT\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> a8bfac9e5f847afd9ccc5ee7eddbee5b2a52ac7a
+=======
 >>>>>>> a8bfac9e5f847afd9ccc5ee7eddbee5b2a52ac7a
 =======
 >>>>>>> a8bfac9e5f847afd9ccc5ee7eddbee5b2a52ac7a

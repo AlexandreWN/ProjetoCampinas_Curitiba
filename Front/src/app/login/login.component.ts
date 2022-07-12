@@ -25,12 +25,17 @@ export class LoginComponent implements OnInit {
 
     var data = JSON.stringify({
 <<<<<<< HEAD
+<<<<<<< HEAD
       "edv": login?.value,
       "senha": senha?.value,
       "area" : "",
       "email" : "",
       "dataNasc" : Date,
       "nome" : ""
+=======
+      "login": login?.value,
+      "passwd": senha?.value
+>>>>>>> a8bfac9e5f847afd9ccc5ee7eddbee5b2a52ac7a
 =======
       "login": login?.value,
       "passwd": senha?.value
