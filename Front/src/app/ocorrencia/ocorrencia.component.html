@@ -1,1 +1,59 @@
-<p>ocorrencia works!</p>
+<app-top-bar></app-top-bar>
+
+<div class="titleRegister">
+    <h1>Qual sua Ocorrência?</h1>
+</div>
+
+<div class="register">
+   <div class="client">
+    <form>
+        <div class="inputsRegister">
+            <select class="form-select form-select" aria-label="Default select example">
+                <option selected>Selecione o tipo de ocorrencia</option>
+                <option value="falta">Falta</option>
+                <option value="atraso">Atraso</option>
+                <option value="saida_antecipada">Saida Antecipada</option>
+              </select>
+        </div>
+
+        <div class="inputsRegister">
+
+            <input type="text" id="dateE" placeholder="Data Entrada" onfocus="(this.type='date')"/>
+        </div>
+
+        <div class="inputsRegister">
+            <input type="text" id="dateS" placeholder="Data Saida" onfocus="(this.type='date')"/>
+            <div class="inputsRegisterData">
+                <input type="text" id="dateE" placeholder="Data Entrada" onfocus="(this.type='date')"/>
+            </div>
+
+            <div class="inputsRegisterHora">
+                <input type="text" id="horaE" placeholder="Hora Entrada" onfocus="(this.type='time')"/>
+            </div>
+        </div>
+
+        <div class="inputsRegisterSaida">
+            <div class="inputsRegisterData">
+                <input type="text" id="dateS" placeholder="Data Saida" onfocus="(this.type='date')"/>
+            </div>
+
+            <div class="inputsRegisterHora">
+                <input type="text" id="horaS" placeholder="Hora Saida" onfocus="(this.type='time')"/>
+            </div>
+        </div>
+ 
+         <div class="inputsRegister">
+             <input type="text" id="descricao" placeholder="Descrição" />
+         </div>
+
+         <div class="mb-3 inputsRegister">
+            <input class="form-control" type="file" id="formFile">
+          </div>
+ 
+    </form>
+   </div>
+
+    <div class="btnss">
+        <div  class="btnAddress2"><button class="btn" type="button" >Salvar</button></div>
+    </div>
+</div>
