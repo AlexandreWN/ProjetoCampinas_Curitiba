@@ -347,8 +347,38 @@ table {
     justify-content: center;
   }
 
+  .inputsRegisterSaida{
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .inputsRegisterData{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .inputsRegisterHora{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+
   .inputsRegister input{
     width: 40%;
+    padding: 5px;
+    margin-top: 15px;
+  }
+
+  .inputsRegisterData input{
+    width: 80%;
+    padding: 5px;
+    margin-top: 15px;
+  }
+
+  .inputsRegisterHora input{
+    width: 80%;
     padding: 5px;
     margin-top: 15px;
   }
