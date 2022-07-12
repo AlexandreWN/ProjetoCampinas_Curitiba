@@ -1,0 +1,480 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+  width:100%;
+  height:100%;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: #616161;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+ 
+  .container {
+    display: flex;
+    flex-direction:column;
+  }
+  /*
+  router-outlet + *  {
+    padding: 0 16px;
+  }*/
+  
+  /* Text */
+  
+  h1 {
+    font-size: 32px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  h1, h2 {
+    font-weight: lighter;
+  }
+  
+  p {
+    font-size: 14px;
+    padding: 5px;
+  }
+  
+  /* Hyperlink */
+  
+  /* a {
+    cursor: pointer;
+    color: #1976d2;
+    text-decoration: none;
+  } */
+  
+  a:hover {
+    opacity: 0.8;
+  }
+  
+  /* Input */
+  
+  input {
+    font-size: 14px;
+    border-radius: 2px;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #BDBDBD;
+  }
+  
+  label {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    display: block;
+    text-transform: uppercase;
+  }
+  
+  /* Button */
+  .button, button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+  }
+  
+  .button:hover, button:hover {
+    opacity: 0.8;
+    font-weight: normal;
+  }
+  
+  .button:disabled, button:disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
+  
+  /* Fancy Button */
+  
+  .fancy-button {
+    background-color: white;
+    color: #1976d2;
+  }
+  
+  .fancy-button i.material-icons {
+    color: #1976d2;
+    padding-right: 4px;
+  }
+  
+  /* Top Bar */
+  
+  /* app-top-bar {
+    width: 100%;
+    height: 30%;
+    background-color: #1976d2;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  } */
+  
+  /* app-top-bar h1 {
+    color: white;
+    margin: 0;
+  } */
+  
+  /* Checkout Cart, Shipping Prices */
+  
+  .cart-item, .shipping-item {
+    width: 100%;
+    min-width: 400px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 32px;
+    margin-bottom: 8px;
+    border-radius: 2px;
+    background-color: #EEEEEE;
+  }
+
+  .productComponent{
+    padding: 2%;
+    width: 32.3%;
+    border: 0.5px solid gray;
+    margin: 0.5%;
+    border-radius: 5px;
+  }
+
+  .productsList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1%;
+  }
+
+  .productsList-Wishlist{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1%;
+  }
+
+  .coracaozinho{
+    float: right;
+    width: 50%;
+  }
+
+  .coracaozao{
+    float: right;
+    width: 50%;
+  }
+
+  .coracaozao .img-responsive {
+    height: 150px;
+    width: 100px;
+  }
+
+  .conteudo{
+    float: left;
+    width: 50%;
+  }
+
+  .img-responsive {
+    height: auto;
+    max-width: 90%;
+    transition: transform .2s;
+  }
+  
+
+  .big-img-responsive{
+    float:left;
+    max-width: 26%;
+  }
+
+  .img-coracao{
+    max-width: 10%;
+    height: auto;
+  }
+
+  .imgProd{
+    width: 100px;
+    height: 150px;
+    padding: auto;
+    display: flex;
+  }
+
+  .wishlistImg{
+    padding: auto;
+    width: 35%;
+  }
+
+  .imgProd-Wishlist{
+    float: left;
+    width: 90%;
+    height: 90%;
+    margin-top: 12px;
+  }
+
+  .wishlistDetails{
+    float: right;
+    width: 65%;
+    padding: 5px;
+  }
+
+
+  .title{
+    padding: 10px;
+  }
+
+  .imageProductDetail{
+    width: 30%;
+    height: 30%;
+    padding: auto;
+    display: inline-block;
+  }
+
+  .priceProductDetail{
+    font-size: 220%;
+    display: inline-block;
+  }
+
+  .buttonPurchase {
+    display: block;
+    margin: 20px 0 0 215px;
+    padding: 25px;
+    width: 250px;
+  }
+
+  .box1 {
+    float: right;
+    width: 60%;
+  }
+
+  .box2{
+    float: left;
+    width: 30%;
+  }
+
+  .box1 h3 {
+    font-size: 2em;
+    padding: 8px;
+    margin: 100px 0 100px 100px;
+  }
+
+  .box1 p {
+    padding: 10px;
+    
+    margin: 0 0 75px 100px;
+  }
+
+  .box1 h4 {
+    padding: 5px;
+    margin: 0 0 0 100px;
+  }
+
+  .register{
+    width: 90%;
+    height: 100%;
+    border: 0.5px solid gray;
+    padding: 5px;
+    margin: 5% auto 0 auto;
+  }
+
+  .registerStore{
+    width: 60%;
+    height: 100%;
+    border: 0.5px solid gray;
+    padding: 5px;
+    margin: 5% auto 0 auto;
+  }
+
+  .registerStore h1 {
+    margin-left: 12%;
+    margin-right: 6%;
+  }
+
+  .client{
+    width: 42%;
+    float: left;
+  }
+
+  .address{
+    width: 42%;
+    height: 100%;
+    float: right;
+  }
+
+  .inputsRegister{
+    display: flex;
+    justify-content: center;
+  }
+
+  .inputsRegister input{
+    width: 60%;
+    padding: 5px;
+    margin-top: 15px;
+  }
+
+  .inputsRegister h3{
+    padding: 5px;
+    margin-top: 15px;
+  }
+
+  .inputsRegisterStore{
+    display: flex;
+    justify-content: center;
+  }
+
+  .inputsRegisterStore input{
+    width: 40%;
+    padding: 5px;
+    margin-top: 15px;
+  }
+
+  .titleRegister{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    padding: 5px;
+    margin-top: 4%;
+  }
+
+  .titleRegister h1{
+    display: flex;
+    justify-content: center;  
+  }
+
+  .register .settings{
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+      margin-top: 4%;
+  }
+
+  .register .settings p{
+    font-size: 22px;
+}
+
+.checkboxRegister{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding: 5px;
+}
+
+.checkboxRegister input{
+  float: left;
+  display:inline-block;
+  margin: 0;
+  width: 10%;
+  margin-top: 3%;
+}
+
+.inputsRegister .checkboxRegister label{
+  float: right;
+  display:inline-block;
+  margin-top: 1%;
+  padding: 2%;
+}
+
+.inputsRegister label {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+  .btnss{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;  
+  }
+
+  .btnss .btn{
+    padding: 10px;
+  }
+
+  .btnss .btnAddress1{
+    width: 45%;
+    display: flex;
+    justify-content: center;  
+  }
+ 
+  .btnss .btnAddress2{
+    width: 45%;
+    display: flex;
+    justify-content: center;  
+  }
+
+  .login{
+    width: 50%;
+    margin: auto auto;
+    padding: 50px;
+  }
+
+  .loginInput{
+    display: flex;
+    justify-content: center;
+  }
+
+  .passwordInput{
+    display: flex;
+    justify-content: center;
+  }
+
+  .buttonsInput{
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn1{
+    margin-right: 15px;
+  }
+
+  .margin-drop-menu{
+    margin-right: 1%;
+  }
+
+/* .aiaiaiuiui{
+  margin-right:25px;
+} */
