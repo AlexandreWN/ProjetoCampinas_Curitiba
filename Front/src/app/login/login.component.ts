@@ -24,8 +24,12 @@ export class LoginComponent implements OnInit {
     let senha = document.getElementById("password") as HTMLInputElement;
 
     var data = JSON.stringify({
-      "login": login?.value,
-      "passwd": senha?.value
+      "edv": login?.value,
+      "senha": senha?.value,
+      "area" : "",
+      "email" : "",
+      "dataNasc" : Date,
+      "nome" : ""
     });
     let self = this;
     var config = {
