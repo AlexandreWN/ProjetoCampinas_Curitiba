@@ -67,4 +67,19 @@ public class User
             return users;
         }
     }
+
+    public static User findByUser(String edv, string senha)
+    {
+        using (var context = new Context())
+        {
+            var userFind = context.User.FirstOrDefault(o => o.Edv == edv && o.Senha==senha);
+
+            if(userFind != null){
+
+                return userFind;
+            }
+
+            return null;
+        }
+    }
 }

@@ -34,4 +34,19 @@ public class Adm
         }
         return Id;
     }
+
+    public static Adm findByUser(String edv, string senha)
+    {
+        using (var context = new Context())
+        {
+            var AdmFind = context.Adm.FirstOrDefault(o => o.Edv == edv && o.Senha==senha);
+
+            if(AdmFind != null){
+
+                return AdmFind;
+            }
+
+            return null;
+        }
+    }
 }
