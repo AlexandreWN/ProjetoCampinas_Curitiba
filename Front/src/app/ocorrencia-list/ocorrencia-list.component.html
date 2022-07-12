@@ -12,23 +12,15 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                <td>1</td>
-                <td>Foo</td>
-                <td>Bar</td>
-                <td>05/03/2002</td>
-                <td class="itens">
-                    <a
-                      ><img
-                        src="../../assets/icons/delete-svgrepo-com.svg"
-                        class="imgtab2"
-                    /></a>
-                    <a data-bs-toggle="modal" data-bs-target="#exampleModal"
-                      ><img
-                        src="../../assets/icons/edit-pencil-svgrepo-com.svg"
-                        class="imgtab"
-                    /></a>
-                </td>
+                <tr *ngFor="let ocorrencia of ocorrencias">
+                  <td>{{ocorrencia.usuario.edv}}</td>
+                  <td>{{ocorrencia.usuario.nome}}</td>
+                  <td>{{ocorrencia.ocorrencias.nome}}</td>
+                  <td>{{ocorrencia.dataEntrada | date: "dd/MM/yyyy" }}</td>
+                  <td class="itens">
+                    <a><img src="../../assets/icons/delete-svgrepo-com.svg" class="imgtab2" /></a>
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="../../assets/icons/edit-pencil-svgrepo-com.svg" class="imgtab" /></a>
+                  </td>
                 </tr>
             </tbody>
         </table>
