@@ -8,7 +8,11 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DTO
 <<<<<<< HEAD
+<<<<<<< HEAD
 build_property.ProjectDir = c:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\DTO\
+=======
+build_property.ProjectDir = C:\Users\VIN1CT\Desktop\ProjetoCampinas_Curitiba\APi\DTO\
+>>>>>>> 866c27dd213e7a1750ad726e0d854377d3dfd2d3
 =======
 build_property.ProjectDir = C:\Users\VIN1CT\Desktop\ProjetoCampinas_Curitiba\APi\DTO\
 >>>>>>> 866c27dd213e7a1750ad726e0d854377d3dfd2d3
