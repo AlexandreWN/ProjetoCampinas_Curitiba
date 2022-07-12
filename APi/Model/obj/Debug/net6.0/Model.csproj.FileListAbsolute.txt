@@ -43,3 +43,6 @@ C:\Users\COC2CT\Desktop\Justificativas\ProjetoCampinas_Curitiba\APi\Model\obj\De
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\DTO.dll
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\DTO.pdb
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.csproj.CopyComplete
+C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\DTO.dll
+C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\DTO.pdb
+C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.csproj.CopyComplete

@@ -11,6 +11,8 @@ import { OcorrenciaHistoricoComponent } from './ocorrencia-historico/ocorrencia-
 import { OcorrenciaListComponent } from './ocorrencia-list/ocorrencia-list.component';
 import { RouterModule } from '@angular/router';
 
+import { DataTablesModule } from "angular-datatables";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +26,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    DataTablesModule,
     RouterModule.forRoot([
       {path: '', component: LoginComponent},
       {path: 'Ocorrencias', component: OcorrenciaComponent},
