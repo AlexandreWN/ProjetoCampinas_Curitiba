@@ -12,4 +12,8 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  aviso(){
+    alert("Converse com seu gestor!")
+  }
+
 }

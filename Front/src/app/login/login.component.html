@@ -1,15 +1,20 @@
 <app-top-bar></app-top-bar>
 <div class="login">
    <form>
+
+        <h2>Bem-Vindo</h2>
+        <p>Realize seu login para continuar</p>
        <div class="loginInput">
-           <input type="text" id="login" placeholder="Login" />
+           <input type="text" id="login" placeholder="EDV" />
        </div>
 
        <div class="passwordInput">
-            <input type="password" id="password" placeholder="Password" />
+            <input type="password" id="password" placeholder="Senha" />
         </div>
         <div class="buttonsInput">
-            <button type="button" class="btn1">Sign in</button>
+            <button type="button" class="btn1">Logar</button>
         </div>
+        <p class="sub">Problemas com o login?</p>
+        <a class="link" (click)="aviso()">Clique aqui!</a>
    </form>
 </div>
