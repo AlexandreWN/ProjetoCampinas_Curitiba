@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+=======
+C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\Model.deps.json
+C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\Model.dll
+C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\Model.pdb
+C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\DTO.dll
+C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\DTO.pdb
+C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.csproj.AssemblyReference.cache
+C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.AssemblyInfoInputs.cache
+C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.AssemblyInfo.cs
+C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.csproj.CopyComplete
+C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.dll
+C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\refint\Model.dll
+C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.pdb
+C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\ref\Model.dll
+>>>>>>> c8df4e4f19dc3f1a99d0712617dd1d3178ec7f99
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\Model.deps.json
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\Model.dll
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\Model.pdb
@@ -13,3 +31,21 @@ C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\ne
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\refint\Model.dll
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.pdb
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\ref\Model.dll
+<<<<<<< HEAD
+=======
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\Model.deps.json
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\Model.dll
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\Model.pdb
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\DTO.dll
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\DTO.pdb
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.csproj.AssemblyReference.cache
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.AssemblyInfoInputs.cache
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.AssemblyInfo.cs
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.csproj.CopyComplete
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.dll
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\refint\Model.dll
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.pdb
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\ref\Model.dll
+>>>>>>> c8df4e4f19dc3f1a99d0712617dd1d3178ec7f99
