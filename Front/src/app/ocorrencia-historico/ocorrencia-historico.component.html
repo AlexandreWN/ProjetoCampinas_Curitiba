@@ -1,1 +1,28 @@
-<p>ocorrencia-historico works!</p>
+<app-top-bar></app-top-bar>
+<div class="principal">
+  <h2>Histórico</h2>
+  <div class="tabela">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+          <th>EDV</th>
+          <th>Nome</th>
+          <th>Tipo</th>
+          <th>Data</th>
+          <th>Gerar PDF</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let ocorrencia of ocorrencias">
+            <td>{{ocorrencia.usuario.edv}}</td>
+            <td>{{ocorrencia.usuario.nome}}</td>
+            <td>{{ocorrencia.ocorrencias.nome}}</td>
+            <td>{{ocorrencia.dataEntrada | date: "dd/MM/yyyy" }}</td>
+            <td class="itens">
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="../../assets/icons/simbolo-de-formato-de-arquivo-pdf.png" class="imgtab" /></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</div>

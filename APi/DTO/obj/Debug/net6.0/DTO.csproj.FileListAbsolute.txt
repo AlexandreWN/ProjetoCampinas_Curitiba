@@ -49,6 +49,7 @@ C:\Users\VIN1CT\Desktop\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\refint
 C:\Users\VIN1CT\Desktop\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\DTO.pdb
 C:\Users\VIN1CT\Desktop\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\ref\DTO.dll
 >>>>>>> 8f5c73fd3fbf626324dbd9bcd8b078c71665c5a6
+<<<<<<< HEAD
 C:\Users\disrct\Desktop\ProjetoCampinas_Curitiba\APi\DTO\bin\Debug\net6.0\DTO.deps.json
 C:\Users\disrct\Desktop\ProjetoCampinas_Curitiba\APi\DTO\bin\Debug\net6.0\DTO.dll
 C:\Users\disrct\Desktop\ProjetoCampinas_Curitiba\APi\DTO\bin\Debug\net6.0\DTO.pdb
@@ -61,3 +62,17 @@ C:\Users\disrct\Desktop\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\DTO.dl
 C:\Users\disrct\Desktop\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\refint\DTO.dll
 C:\Users\disrct\Desktop\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\DTO.pdb
 C:\Users\disrct\Desktop\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\ref\DTO.dll
+=======
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\DTO\bin\Debug\net6.0\DTO.deps.json
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\DTO\bin\Debug\net6.0\DTO.dll
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\DTO\bin\Debug\net6.0\DTO.pdb
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\DTO.csproj.AssemblyReference.cache
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\DTO.AssemblyInfoInputs.cache
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\DTO.AssemblyInfo.cs
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\DTO.dll
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\refint\DTO.dll
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\DTO.pdb
+C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\DTO\obj\Debug\net6.0\ref\DTO.dll
+>>>>>>> 4c4520ac65cdb6ef458937958be6a3eadafdd0bf

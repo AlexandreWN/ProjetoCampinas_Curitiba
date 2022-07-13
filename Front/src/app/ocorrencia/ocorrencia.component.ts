@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import axios from 'axios';
+import { Route, Router } from '@angular/router';
 import { Ocorrencias } from '../ocorrencias';
 import { User } from '../user';
 import jspdf from 'jspdf';
@@ -15,7 +16,12 @@ export class OcorrenciaComponent implements OnInit {
   user : User
   userId : number;
 
-  constructor() {
+  constructor(private router: Router) {
+    let self = this;
+    if(localStorage.getItem("authToken") == null && localStorage.getItem("authOwner") == null){
+      self.router.navigate(["/"])
+    } 
+
     this.userId = 0;
 
     this.user = {
@@ -95,6 +101,15 @@ export class OcorrenciaComponent implements OnInit {
     .then(function (response:any) {
       console.log(JSON.stringify(response.data));
       self2.user = response.data;
+
+      let dataNova = self2.user.dataNasc.substring(0,10).toString();
+      let day = dataNova.substring(8,10).toString();
+      let month = dataNova.substring(5,7).toString();
+      let year = dataNova.substring(0,4).toString();
+      let dataCerta = day + month + year;
+
+      self2.verificaPrimeiro(dataCerta, self2.user.senha);
+
     })
     .catch(function (error:any) {
       console.log(error);
@@ -126,6 +141,13 @@ export class OcorrenciaComponent implements OnInit {
       console.log(error);
     });
   }
+
+  verificaPrimeiro(data : string, senha: string){
+    if(data == senha){
+      this.router.navigate(['trocarSenha']);
+    }
+  }
+
   register(){
     const datinha = new Date().getTime();
     let select = document.getElementById("ocorrencia") as HTMLSelectElement;
@@ -174,6 +196,7 @@ export class OcorrenciaComponent implements OnInit {
       alert("Registrado com sucesso!");
       self4.pegarDados()
       self4.gerarPDF(comprovante,dataEntrada?.value,dataSaida?.value,horaEntrada?.value,horaSaida?.value,descricao?.value,self4.user.nome,self4.user.edv,self4.user.area,option?.text)
+      self4.router.navigate(['/'])
     })
     .catch(function (error) {
       alert("Erro Genérico!");
