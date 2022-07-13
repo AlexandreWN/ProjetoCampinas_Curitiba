@@ -3,8 +3,8 @@
   <div class="caixa-filtro">
     <div class="filtro">
       <h1>Filtro:</h1>
-      <input type="text" class="filter" id="name" placeholder="EDV"/>
-      <button>OK</button>
+      <input type="text" class="filter" id="EDV" placeholder="EDV"/>
+      <button (click)="filtro()">OK</button>
     </div>
   </div>
   <div class="tabela">
@@ -25,8 +25,8 @@
             <td>{{ocorrencia.ocorrencias.nome}}</td>
             <td>{{ocorrencia.dataEntrada | date: "dd/MM/yyyy" }}</td>
             <td class="itens">
-              <a><img src="../../assets/icons/delete-svgrepo-com.svg" class="imgtab2" /></a>
-              <a data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="../../assets/icons/edit-pencil-svgrepo-com.svg" class="imgtab" /></a>
+              <a (click)="delet(ocorrencia.id)"><img src="../../assets/icons/delete-svgrepo-com.svg" class="imgtab2" /></a>
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="dadosUser(ocorrencia.descricao, ocorrencia.id, ocorrencia.dataEntrada, ocorrencia.dataSaida)"><img src="../../assets/icons/edit-pencil-svgrepo-com.svg" class="imgtab" /></a>
             </td>
           </tr>
         </tbody>
@@ -42,8 +42,11 @@
         </div>
         <div class="modal-body">
           <br>
-          <h4>Name</h4>
-          <input type="text" class="form-control" id="name" placeholder="New Name" />
+          <h4>Tipo Ocorrencia</h4>
+          <select name="ocorrencias" id="ocorrencias">
+            <option *ngFor="let dados of dadoscorrencias" value="{{dados.id}}" id="dadosNome">{{dados.nome}}</option>
+          </select>
+          <br>
           <br>
           <h4>Descrição</h4>
           <input type="text" class="form-control" id="description" placeholder="New description" />
@@ -57,7 +60,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+          <button type="button" class="btn btn-primary" (click)="editOcorrencia()" data-bs-dismiss="modal">Save changes</button>
         </div>
       </div>
     </div>
