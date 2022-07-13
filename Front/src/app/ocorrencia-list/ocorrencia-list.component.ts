@@ -107,31 +107,33 @@ export class OcorrenciaListComponent implements OnInit{
     let dadosNome = document.getElementById("dadosNome") as HTMLSelectElement;
     let option = select.options[select.selectedIndex];
 
-    var data = {
-      Descricao : descricao.value,
-      DataEntrada : new Date(datastart.value),
-      DataSaida : new Date(dataend.value),
-      Comprovante : "",
-      Documento: "",
-      Ocorrencias : {
-        Id : option.value,
-        Nome : ""
+    var data = JSON.stringify({
+      "id": 0,
+      "descricao": descricao?.value,
+      "dataEntrada": datastart?.value + "T00:00:00.000Z",
+      "dataSaida": dataend?.value + "T00:00:00.000Z",
+      "comprovante": "string",
+      "documento": "string",
+      "ocorrencias":{
+        "id": option?.value,
+        "nome": ""
       },
-      Usuario : {
-        Id : "1",
-        Edv : "127694764",
-        Area : "teste",
-        Nome : "Ale",
-        Email : "ahwfyudiaw@AEkflMI.com",
-        Senha : "123awdw"
+      "usuario": {
+        "id": 0,
+        "nome": "",
+        "edv": "",
+        "area": "",
+        "dataNasc": dataend?.value + "T00:00:00.000Z",
+        "email": "",
+        "senha": ""
       }
-    }
+    })
 
     var config ={
       method: 'put',
       url: 'http://localhost:5051/Ocorrencia/update/' + this.id,
-      headers: { },
-      data : JSON.stringify(data)
+      headers: { 'Content-Type': 'application/json' },
+      data : data
     };
     console.log(data)
     var instance = this;

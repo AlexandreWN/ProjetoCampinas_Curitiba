@@ -12,6 +12,7 @@ import { OcorrenciaListComponent } from './ocorrencia-list/ocorrencia-list.compo
 import { RouterModule } from '@angular/router';
 
 import { DataTablesModule } from "angular-datatables";
+import { PrimeiroAcessoComponent } from './primeiro-acesso/primeiro-acesso.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DataTablesModule } from "angular-datatables";
     RegisterUserComponent,
     OcorrenciaComponent,
     OcorrenciaHistoricoComponent,
-    OcorrenciaListComponent
+    OcorrenciaListComponent,
+    PrimeiroAcessoComponent
   ],
   imports: [
     BrowserModule,
