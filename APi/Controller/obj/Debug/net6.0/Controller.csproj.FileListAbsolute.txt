@@ -137,8 +137,6 @@ C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Controller\obj\Deb
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.pdb
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.genruntimeconfig.cache
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\ref\Controller.dll
-<<<<<<< HEAD
-=======
 C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Controller\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Controller\bin\Debug\net6.0\appsettings.json
 C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Controller\bin\Debug\net6.0\Controller.exe
@@ -207,4 +205,3 @@ C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0
 C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.pdb
 C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\Controller.genruntimeconfig.cache
 C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Controller\obj\Debug\net6.0\ref\Controller.dll
->>>>>>> c8df4e4f19dc3f1a99d0712617dd1d3178ec7f99

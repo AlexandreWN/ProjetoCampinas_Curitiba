@@ -1,10 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj": {}
-=======
-<<<<<<< HEAD
     "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj": {}
   },
   "projects": {
@@ -19,27 +15,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\COC2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-    "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj": {}
->>>>>>> c8df4e4f19dc3f1a99d0712617dd1d3178ec7f99
-  },
-  "projects": {
-    "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj",
-        "projectName": "DTO",
-        "projectPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj",
-        "packagesPath": "C:\\Users\\OLL2CT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\DTO\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\OLL2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\nia1ct\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> d2b96dc69e4ce4b1a72056b466007e3a93824fc6
->>>>>>> c8df4e4f19dc3f1a99d0712617dd1d3178ec7f99
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

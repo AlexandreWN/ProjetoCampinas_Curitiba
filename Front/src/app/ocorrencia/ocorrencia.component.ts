@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import axios from 'axios';
+import { Route, Router } from '@angular/router';
 import { Ocorrencias } from '../ocorrencias';
 import { User } from '../user';
 
@@ -14,7 +15,7 @@ export class OcorrenciaComponent implements OnInit {
   user : User
   userId : number;
 
-  constructor() {
+  constructor(private router: Router) {
     this.userId = 0;
 
     this.user = {
@@ -144,11 +145,12 @@ export class OcorrenciaComponent implements OnInit {
       },
       data : data
     };
-    
+    let self = this;
     axios(config)
     .then(function (response) {
       console.log(JSON.stringify(response.data));
       alert("Registrado com sucesso!");
+      self.router.navigate(['/'])
     })
     .catch(function (error) {
       alert("Erro Genérico!");
