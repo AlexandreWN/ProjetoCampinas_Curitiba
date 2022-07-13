@@ -13,6 +13,13 @@ export class RegisterUserComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    let self = this;
+    if(localStorage.getItem("authOwner") == null && localStorage.getItem("authToken") == null){
+      self.router.navigate(["/"])
+    }
+    if(localStorage.getItem("authToken") != null){
+      self.router.navigate(["/"])
+    }
   }
 
 

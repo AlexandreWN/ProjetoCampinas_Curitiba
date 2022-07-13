@@ -16,6 +16,11 @@ export class OcorrenciaComponent implements OnInit {
   userId : number;
 
   constructor(private router: Router) {
+    let self = this;
+    if(localStorage.getItem("authToken") == null && localStorage.getItem("authOwner") == null){
+      self.router.navigate(["/"])
+    } 
+
     this.userId = 0;
 
     this.user = {

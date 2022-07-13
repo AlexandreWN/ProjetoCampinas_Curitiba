@@ -15,7 +15,7 @@ table{
     width: 20px;
     height:20px;
     filter: invert(42%) sepia(93%) saturate(1009%) hue-rotate(173deg) brightness(98%) contrast(107%);
-    margin-left: 5px;
+    margin-left: 7%;
     margin-right: 5px;
 }
 .imgtab2{

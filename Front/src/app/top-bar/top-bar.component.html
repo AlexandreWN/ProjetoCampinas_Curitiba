@@ -13,22 +13,17 @@
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-
-            
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/Ocorrencia']">Justificativa</a>
+              <a class="nav-link" *ngIf="authToken != null" href="historico">Histórico</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="historico">Histórico</a>
+              <a class="nav-link" *ngIf="authOwner != null" href="ocorrenciaslist">Ocorrências</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="ocorrenciaslist">ocorrenciaslist</a>
+              <a class="nav-link" *ngIf="authOwner != null" href="registerUsers">Registrar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="registerUsers">registerUser</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Ocorrencias">Ocorrencias</a>
+              <a class="nav-link" *ngIf="authToken != null" href="Ocorrencias">Registrar</a>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto">

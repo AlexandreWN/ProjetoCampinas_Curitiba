@@ -69,7 +69,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\DTO\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problem reading the cache file C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\DTO\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }
