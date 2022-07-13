@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import axios from 'axios';
 import { Ocorrencias } from '../ocorrencias';
-import { OcorrenciasUser } from '../ocorrenciasUser';
+import { User } from '../user';
 
 @Component({
   selector: 'app-ocorrencia',
@@ -11,11 +11,22 @@ import { OcorrenciasUser } from '../ocorrenciasUser';
 export class OcorrenciaComponent implements OnInit {
 
   ocorrencias : [Ocorrencias] | undefined;
-  user : [OcorrenciasUser] | undefined;
+  user : User
   userId : number;
 
   constructor() {
     this.userId = 0;
+
+    this.user = {
+      id : this.userId,
+      nome : "",
+      edv: "",
+      senha: "",
+      area: "",
+      email: "",
+      dataNasc: ""
+    }
+
   }
 
   ngOnInit(): void {
@@ -62,6 +73,29 @@ export class OcorrenciaComponent implements OnInit {
     .then(function (response:any) {
       console.log(JSON.stringify(response.data));
       self2.userId = response.data;
+    })
+    .catch(function (error:any) {
+      console.log(error);
+    });
+
+    var data3 = JSON.stringify({
+      
+    });
+    let self3 = this;
+    var config3 = {
+      method: 'get',
+      url: 'http://localhost:5051/user/getById',
+      headers: { 
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + token
+      },
+      data : data3
+    };
+
+    axios(config3)
+    .then(function (response:any) {
+      console.log(JSON.stringify(response.data));
+      self2.user = response.data;
     })
     .catch(function (error:any) {
       console.log(error);

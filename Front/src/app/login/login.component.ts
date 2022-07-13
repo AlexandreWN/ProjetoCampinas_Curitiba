@@ -13,6 +13,9 @@ export class LoginComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    if(localStorage.getItem('authToken') != null){
+      this.router.navigate(['Ocorrencias']);
+    }
   }
 
   aviso(){
@@ -45,7 +48,7 @@ export class LoginComponent implements OnInit {
     .then(function (response:any) {
       localStorage.setItem('authToken',response.data);
       localStorage.removeItem('authOwner');
-      self.router.navigate(['']);
+      self.router.navigate(['Ocorrencias']);
     })
     .catch(function (error:any) {
       console.log(error);

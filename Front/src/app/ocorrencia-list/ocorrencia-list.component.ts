@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { OcorrenciasUser } from '../ocorrenciasUser';
 import axios from 'axios';
 @Component({
@@ -6,10 +6,10 @@ import axios from 'axios';
   templateUrl: './ocorrencia-list.component.html',
   styleUrls: ['./ocorrencia-list.component.css']
 })
-export class OcorrenciaListComponent implements OnInit {
-  
+export class OcorrenciaListComponent implements OnInit{
+  dtOptions: any = {};
   ocorrencias: Array<OcorrenciasUser> = [];
-  
+
   constructor() { }
 
   ngOnInit(): void {
@@ -25,12 +25,26 @@ export class OcorrenciaListComponent implements OnInit {
     };
 
     var instance = this;
+    axios(config)
+      .then(function (response) {
+        instance.ocorrencias = response.data;
+        console.log(instance.ocorrencias);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
+
+  filtro(EDV : string){
+    var config ={
+      method: 'get',
+      url: 'http://localhost:5196/Catalogue/getByEvent/'+EDV,
+      headers: { },
+      data : ''
+    };
+    var instance = this;
     axios(config).then(function (response) {
       instance.ocorrencias = response.data;
-      console.log(instance.ocorrencias);
     })
-    .catch(function (error) {
-      console.log(error);
-    });
   }
 }
