@@ -94,6 +94,10 @@ public class Ocorrencia
         using (var context = new Context())
         {
             var ocorrencia = context.Ocorrencia.FirstOrDefault(i => i.Id == id);
+            if(ocorrenciaDTO.Ocorrencias != null)
+            {
+                ocorrencia.Ocorrencias = ocorrenciaDTO.Ocorrencias;
+            }
             if(ocorrenciaDTO.Descricao != null)
             {
                 ocorrencia.Descricao = ocorrenciaDTO.Descricao;

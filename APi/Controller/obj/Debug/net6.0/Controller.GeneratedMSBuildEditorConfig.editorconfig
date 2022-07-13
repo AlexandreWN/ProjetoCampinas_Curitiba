@@ -8,17 +8,9 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Controller
 build_property.RootNamespace = Controller
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Controller\
+build_property.ProjectDir = C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Controller\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Controller
-=======
-build_property.ProjectDir = C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Controller\
-build_property.RazorLangVersion = 6.0
-build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Controller
->>>>>>> 2c3eeb7b78af0b70422dc017d3beaedd26d2bd81
+build_property.MSBuildProjectDirectory = C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Controller
 build_property._RazorSourceGeneratorDebug = 

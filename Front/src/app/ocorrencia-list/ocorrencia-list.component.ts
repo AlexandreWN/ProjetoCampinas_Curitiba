@@ -104,36 +104,37 @@ export class OcorrenciaListComponent implements OnInit{
     let datastart  = document.getElementById("datastart") as HTMLInputElement;
     let dataend = document.getElementById("dataend") as HTMLInputElement;
     let select = document.getElementById("ocorrencias") as HTMLSelectElement;
-    let dadosNome = document.getElementById("dadosNome") as HTMLSelectElement;
     let option = select.options[select.selectedIndex];
+    let dadosNome = option.text;
 
-    var data = {
-      Descricao : descricao.value,
-      DataEntrada : new Date(datastart.value),
-      DataSaida : new Date(dataend.value),
-      Comprovante : "",
-      Documento: "",
-      Ocorrencias : {
-        Id : option.value,
-        Nome : ""
+    var data = JSON.stringify({
+      "id": 0,
+      "descricao": descricao?.value,
+      "dataEntrada": datastart?.value + "T00:00:00.000Z",
+      "dataSaida": dataend?.value + "T00:00:00.000Z",
+      "comprovante": "string",
+      "documento": "string",
+      "ocorrencias":{
+        "id": option?.value,
+        "nome": dadosNome,
       },
-      Usuario : {
-        Id : "1",
-        Edv : "127694764",
-        Area : "teste",
-        Nome : "Ale",
-        Email : "ahwfyudiaw@AEkflMI.com",
-        Senha : "123awdw"
+      "usuario": {
+        "id": 0,
+        "nome": "",
+        "edv": "",
+        "area": "",
+        "dataNasc": dataend?.value + "T00:00:00.000Z",
+        "email": "",
+        "senha": ""
       }
-    }
+    })
 
     var config ={
       method: 'put',
       url: 'http://localhost:5051/Ocorrencia/update/' + this.id,
-      headers: { },
-      data : JSON.stringify(data)
+      headers: { 'Content-Type': 'application/json' },
+      data : data
     };
-    console.log(data)
     var instance = this;
     axios(config).then(function (response) {
       instance.ocorrencias = response.data;
@@ -143,16 +144,16 @@ export class OcorrenciaListComponent implements OnInit{
 
       var endsDate = new Date(dataend.value);
       endsDate.setDate(endsDate.getDate() + 1)
+      console.log("oi")
 
-      instance.ocorrencias.forEach(element => {
-        if(element.id == instance.id){
-          var indice = instance.ocorrencias.indexOf(element)
-          instance.ocorrencias[indice].descricao = descricao.value
-          instance.ocorrencias[indice].ocorrencias.nome = dadosNome.value
-          instance.ocorrencias[indice].dataEntrada = startsDate
-          instance.ocorrencias[indice].dataSaida = endsDate
+      for(var c = 0; c < instance.ocorrencias.length; c++){
+        if(instance.ocorrencias[c].id == instance.id){
+          instance.ocorrencias[c].descricao = descricao.value
+          instance.ocorrencias[c].ocorrencias.nome = dadosNome
+          instance.ocorrencias[c].dataEntrada = startsDate
+          instance.ocorrencias[c].dataSaida = endsDate
         }
-      });
+      };
     })
   }
 
