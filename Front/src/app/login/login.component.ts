@@ -67,7 +67,7 @@ export class LoginComponent implements OnInit {
     .then(function (response:any) {
       localStorage.setItem('authOwner',response.data);
       localStorage.removeItem('authToken');
-      self.router.navigate(['']);
+      self.router.navigate(['ocorrenciaslist']);
     })
     .catch(function (error:any) {
       console.log(error);

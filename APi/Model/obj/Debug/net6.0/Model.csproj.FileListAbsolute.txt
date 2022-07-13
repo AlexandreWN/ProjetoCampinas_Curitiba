@@ -15,8 +15,6 @@ C:\Users\disrct\Desktop\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\refi
 C:\Users\disrct\Desktop\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.pdb
 C:\Users\disrct\Desktop\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\ref\Model.dll
 =======
-<<<<<<< HEAD
-=======
 C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\Model.deps.json
 C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\Model.dll
 C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\Model.pdb
