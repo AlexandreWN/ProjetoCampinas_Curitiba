@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj": {}
   },
   "projects": {
@@ -18,6 +19,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\COC2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj",
+        "projectName": "DTO",
+        "projectPath": "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj",
+        "packagesPath": "C:\\Users\\nia1ct\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\DTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nia1ct\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> d2b96dc69e4ce4b1a72056b466007e3a93824fc6
 =======
     "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj": {}
   },
