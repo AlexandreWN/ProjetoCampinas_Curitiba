@@ -1,30 +1,37 @@
 <app-top-bar></app-top-bar>
 <div class="principal">
-    <div class="tabela">
-        <table datatable class="table table-bordered">
-            <thead>
-                <tr>
-                <th>EDV</th>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Start Date</th>
-                <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let ocorrencia of ocorrencias">
-                  <td>{{ocorrencia.usuario.edv}}</td>
-                  <td>{{ocorrencia.usuario.nome}}</td>
-                  <td>{{ocorrencia.ocorrencias.nome}}</td>
-                  <td>{{ocorrencia.dataEntrada | date: "dd/MM/yyyy" }}</td>
-                  <td class="itens">
-                    <a><img src="../../assets/icons/delete-svgrepo-com.svg" class="imgtab2" /></a>
-                    <a data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="../../assets/icons/edit-pencil-svgrepo-com.svg" class="imgtab" /></a>
-                  </td>
-                </tr>
-            </tbody>
-        </table>
+  <div class="caixa-filtro">
+    <div class="filtro">
+      <h1>Filtro:</h1>
+      <input type="text" class="filter" id="name" placeholder="EDV"/>
+      <button>OK</button>
     </div>
+  </div>
+  <div class="tabela">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+          <th>EDV</th>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Start Date</th>
+          <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let ocorrencia of ocorrencias">
+            <td>{{ocorrencia.usuario.edv}}</td>
+            <td>{{ocorrencia.usuario.nome}}</td>
+            <td>{{ocorrencia.ocorrencias.nome}}</td>
+            <td>{{ocorrencia.dataEntrada | date: "dd/MM/yyyy" }}</td>
+            <td class="itens">
+              <a><img src="../../assets/icons/delete-svgrepo-com.svg" class="imgtab2" /></a>
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="../../assets/icons/edit-pencil-svgrepo-com.svg" class="imgtab" /></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
 </div>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">

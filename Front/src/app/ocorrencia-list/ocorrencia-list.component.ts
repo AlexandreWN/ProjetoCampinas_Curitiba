@@ -9,7 +9,7 @@ import axios from 'axios';
 export class OcorrenciaListComponent implements OnInit{
   dtOptions: any = {};
   ocorrencias: Array<OcorrenciasUser> = [];
-  
+
   constructor() { }
 
   ngOnInit(): void {
@@ -33,5 +33,18 @@ export class OcorrenciaListComponent implements OnInit{
       .catch(function (error) {
         console.log(error);
       });
+  }
+
+  filtro(EDV : string){
+    var config ={
+      method: 'get',
+      url: 'http://localhost:5196/Catalogue/getByEvent/'+EDV,
+      headers: { },
+      data : ''
+    };
+    var instance = this;
+    axios(config).then(function (response) {
+      instance.ocorrencias = response.data;
+    })
   }
 }
