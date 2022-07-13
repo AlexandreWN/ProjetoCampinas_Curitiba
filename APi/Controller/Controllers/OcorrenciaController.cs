@@ -35,6 +35,8 @@ public class OcorrenciaController : ControllerBase
         return ocorrencia;
     }
 
+    
+
     [HttpPost]
     [Route("register")]
     public object OccurrenceRegister([FromBody] Ocorrencia ocorrencia){ 

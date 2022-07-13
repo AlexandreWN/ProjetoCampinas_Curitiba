@@ -77,6 +77,17 @@ public class UserController : ControllerBase
         return users;
     }
 
+    [HttpPut]
+    [Route("updateSenha/{edv}")]
+
+    public object editSenha([FromBody] User userDTO, string edv){
+        Model.User.update(userDTO, edv);
+        return new{
+            status = "ok",
+            mensagem = "deu boa"
+        };
+    }
+
 
     [HttpPost]
     [Route("login")]
