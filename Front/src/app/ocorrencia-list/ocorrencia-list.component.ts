@@ -1,6 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { OcorrenciasUser } from '../ocorrenciasUser';
 import axios from 'axios';
+import { Route, Router } from '@angular/router';
+
 @Component({
   selector: 'app-ocorrencia-list',
   templateUrl: './ocorrencia-list.component.html',
@@ -10,10 +12,18 @@ export class OcorrenciaListComponent implements OnInit{
   dtOptions: any = {};
   ocorrencias: Array<OcorrenciasUser> = [];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    let self = this;
+    if(localStorage.getItem("authOwner") == null && localStorage.getItem("authToken") == null){
+      self.router.navigate(["/"])
+    }
+    if(localStorage.getItem("authToken") != null){
+      self.router.navigate(["/"])
+    }
     this.initialize();
+
   }
 
   async initialize() {

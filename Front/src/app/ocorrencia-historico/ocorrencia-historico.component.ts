@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Ocorrencias } from '../ocorrencias';
 import { User } from '../user';
 import { OcorrenciasUser } from '../ocorrenciasUser';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-ocorrencia-historico',
@@ -15,7 +16,11 @@ export class OcorrenciaHistoricoComponent implements OnInit {
   user : User
   userId : number;
 
-  constructor() { 
+  constructor(private router: Router) {
+    let self = this;
+    if(localStorage.getItem("authToken") == null && localStorage.getItem("authOwner") == null){
+      self.router.navigate(["/"])
+    } 
 
     this.userId = 0;
 
