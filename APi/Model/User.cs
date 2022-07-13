@@ -111,6 +111,7 @@ public class User
             if(userDTO.Senha != null){
                 usuario.Senha = userDTO.Senha;
             }
+            context.SaveChanges();
         }
     }
 }
