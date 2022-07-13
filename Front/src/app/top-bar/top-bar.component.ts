@@ -8,7 +8,14 @@ import { Route, Router } from '@angular/router';
 })
 export class TopBarComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  authToken : string | null;
+  authOwner : string | null;
+
+  constructor(private router: Router) {
+    this.authToken = localStorage.getItem("authToken");
+    this.authOwner = localStorage.getItem("authOwner");
+
+   }
 
   ngOnInit(): void {
   }
