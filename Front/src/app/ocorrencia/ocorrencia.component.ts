@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Route, Router } from '@angular/router';
 import { Ocorrencias } from '../ocorrencias';
 import { User } from '../user';
+import jspdf from 'jspdf';
 
 @Component({
   selector: 'app-ocorrencia',
@@ -83,7 +84,6 @@ export class OcorrenciaComponent implements OnInit {
     .catch(function (error:any) {
       console.log(error);
     });
-
     var data3 = JSON.stringify({
       
     });
@@ -93,11 +93,10 @@ export class OcorrenciaComponent implements OnInit {
       url: 'http://localhost:5051/user/getById',
       headers: { 
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + token
+        'Authorization': 'Bearer ' + localStorage.getItem('authToken')
       },
       data : data3
     };
-
     axios(config3)
     .then(function (response:any) {
       console.log(JSON.stringify(response.data));
@@ -115,7 +114,32 @@ export class OcorrenciaComponent implements OnInit {
     .catch(function (error:any) {
       console.log(error);
     });
+    
 
+  }
+  pegarDados(){
+    var data3 = JSON.stringify({
+      
+    });
+    let self3 = this;
+    var config3 = {
+      method: 'get',
+      url: 'http://localhost:5051/user/getById',
+      headers: { 
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + localStorage.getItem('authToken')
+      },
+      data : data3
+    };
+    let self2=this;
+    axios(config3)
+    .then(function (response:any) {
+      console.log(JSON.stringify(response.data));
+      self2.user = response.data;
+    })
+    .catch(function (error:any) {
+      console.log(error);
+    });
   }
 
   verificaPrimeiro(data : string, senha: string){
@@ -134,13 +158,13 @@ export class OcorrenciaComponent implements OnInit {
     let horaSaida= document.getElementById("horaS") as HTMLInputElement;
     let descricao = document.getElementById("descricao") as HTMLInputElement;
     let anexo = document.getElementById("formFile") as HTMLInputElement;
-
+    let comprovante=this.userId*datinha
     var data = JSON.stringify({
       "descricao": descricao?.value,
       "dataEntrada": dataEntrada?.value + "T" + horaEntrada?.value + ":00.000Z",
       "dataSaida": dataSaida?.value + "T" + horaSaida?.value + ":00.000Z",
       "documento": anexo?.value,
-      "comprovante": this.userId*datinha,
+      "comprovante": comprovante,
       "ocorrencias":{
         "id": option?.value,
         "nome": ""
@@ -165,17 +189,52 @@ export class OcorrenciaComponent implements OnInit {
       },
       data : data
     };
-    let self = this;
+    let self4 = this;
     axios(config)
     .then(function (response) {
       console.log(JSON.stringify(response.data));
       alert("Registrado com sucesso!");
-      self.router.navigate(['/'])
+      self4.pegarDados()
+      self4.gerarPDF(comprovante,dataEntrada?.value,dataSaida?.value,horaEntrada?.value,horaSaida?.value,descricao?.value,self4.user.nome,self4.user.edv,self4.user.area,option?.text)
+      self4.router.navigate(['/'])
     })
     .catch(function (error) {
       alert("Erro Genérico!");
       console.log(error);
+      self4.gerarPDF(comprovante,dataEntrada?.value,dataSaida?.value,horaEntrada?.value,horaSaida?.value,descricao?.value,self4.user.nome,self4.user.edv,self4.user.area,option?.text)
     });
   }
+
+
+
+    gerarPDF(comprovante:number,dataEnt:string,dataSai:string,horaE:string, horaSai:string,descricao:string,nome:string,edv:string,area:string,motivo:string) {
+      var img = new Image()
+      img.src = '../../assets/img/bosch.png'
+      var dataEntr=new Date(dataEnt)
+      var text="Comprovante "+comprovante
+      var text1="Colaborador: "+nome
+      var text2="EDV: "+edv
+      var text3="Motivo: "+motivo
+      var text4="Data de entrada: "+dataEnt[8]+dataEnt[9]+"/"+dataEnt[5]+dataEnt[6]+"/"+dataEnt[2]+dataEnt[3]+ "  "+horaE
+      var text5="Data de saída: "+dataSai[8]+dataSai[9]+"/"+dataSai[5]+dataSai[6]+"/"+dataSai[2]+dataSai[3]+ "  "+horaSai
+      var text6="Descrição da ocorrencia: "+descricao
+      let pdf = new jspdf('p', 'mm', 'a4');
+      pdf.setTextColor("red")
+      pdf.setFont("Times New Roman")
+      pdf.text(text, 60, 30);
+      pdf.setTextColor("black")
+      pdf.text(text1, 30, 40);
+      pdf.text(text2, 120, 40);
+      pdf.text(text3, 30, 50);
+      pdf.text(text4, 30, 60);
+      pdf.text(text5, 30, 70);
+      pdf.text(text6, 30, 80);
+      pdf.addImage(img,'png', 10, 6, 30, 10)
+
+      pdf.output("dataurlnewwindow");
+      var nomepdf="Comprovante "+comprovante+".pdf"
+      pdf.save(nomepdf);
+    
+    }
 
 }
