@@ -104,4 +104,13 @@ public class User
             return null;
         }
     }
+
+    public static void update(User userDTO, string edv){
+        using(var context = new Context()){
+            var usuario = context.User.FirstOrDefault(i => i.Edv == edv);
+            if(userDTO.Senha != null){
+                usuario.Senha = userDTO.Senha;
+            }
+        }
+    }
 }

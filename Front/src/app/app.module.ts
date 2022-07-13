@@ -34,7 +34,8 @@ import { PrimeiroAcessoComponent } from './primeiro-acesso/primeiro-acesso.compo
       {path: 'Ocorrencias', component: OcorrenciaComponent},
       {path: 'registerUsers', component: RegisterUserComponent},
       {path: 'ocorrenciaslist', component: OcorrenciaListComponent},
-      {path: 'historico', component: OcorrenciaHistoricoComponent }
+      {path: 'historico', component: OcorrenciaHistoricoComponent },
+      {path: 'trocarSenha', component: PrimeiroAcessoComponent}
     ])
   ],
   providers: [],

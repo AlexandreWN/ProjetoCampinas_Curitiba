@@ -10,6 +10,11 @@ export class PrimeiroAcessoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+  }
+
+  editSenha(){
+    
   }
 
 }

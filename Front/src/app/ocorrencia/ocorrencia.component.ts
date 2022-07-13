@@ -102,11 +102,26 @@ export class OcorrenciaComponent implements OnInit {
     .then(function (response:any) {
       console.log(JSON.stringify(response.data));
       self2.user = response.data;
+
+      let dataNova = self2.user.dataNasc.substring(0,10).toString();
+      let day = dataNova.substring(8,10).toString();
+      let month = dataNova.substring(5,7).toString();
+      let year = dataNova.substring(0,4).toString();
+      let dataCerta = day + month + year;
+
+      self2.verificaPrimeiro(dataCerta, self2.user.senha);
+
     })
     .catch(function (error:any) {
       console.log(error);
     });
 
+  }
+
+  verificaPrimeiro(data : string, senha: string){
+    if(data == senha){
+      this.router.navigate(['trocarSenha']);
+    }
   }
 
   register(){
