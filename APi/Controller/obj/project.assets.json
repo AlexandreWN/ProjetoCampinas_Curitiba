@@ -2809,11 +2809,25 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
+    "C:\\Users\\COC2CT\\.nuget\\packages\\": {}
+=======
     "C:\\Users\\OLL2CT\\.nuget\\packages\\": {}
+>>>>>>> aa817603d1952f3b671308bf59808bf162537d6d
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
+      "projectName": "Controller",
+      "projectPath": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
+      "packagesPath": "C:\\Users\\COC2CT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Controller\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\COC2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
       "projectUniqueName": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
       "projectName": "Controller",
       "projectPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
@@ -2822,6 +2836,7 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\OLL2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> aa817603d1952f3b671308bf59808bf162537d6d
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2835,8 +2850,13 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+<<<<<<< HEAD
+            "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj"
+=======
             "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
               "projectPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj"
+>>>>>>> aa817603d1952f3b671308bf59808bf162537d6d
             }
           }
         }
@@ -2895,7 +2915,11 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
+<<<<<<< HEAD
+      "message": "Problem reading the cache file C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Controller\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+=======
       "message": "Problema ao ler o arquivo de cache C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Controller\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+>>>>>>> aa817603d1952f3b671308bf59808bf162537d6d
     }
   ]
 }
