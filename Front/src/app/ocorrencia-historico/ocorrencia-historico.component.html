@@ -1,1 +1,34 @@
-<p>ocorrencia-historico works!</p>
+<app-top-bar></app-top-bar>
+<div class="principal">
+  <div class="caixa-filtro">
+    <div class="filtro">
+      <h1>Filtro:</h1>
+      <input type="text" class="filter" id="name" placeholder="EDV"/>
+      <button>OK</button>
+    </div>
+  </div>
+  <div class="tabela">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+          <th>EDV</th>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Start Date</th>
+          <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let ocorrencia of ocorrencias">
+            <td>{{ocorrencia.usuario.edv}}</td>
+            <td>{{ocorrencia.usuario.nome}}</td>
+            <td>{{ocorrencia.ocorrencias.nome}}</td>
+            <td>{{ocorrencia.dataEntrada | date: "dd/MM/yyyy" }}</td>
+            <td class="itens">
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="../../assets/icons/simbolo-de-formato-de-arquivo-pdf.png" class="imgtab" /></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
