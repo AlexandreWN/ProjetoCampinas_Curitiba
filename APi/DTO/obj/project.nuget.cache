@@ -1,32 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   "dgSpecHash": "pjnvGldxP2RLSPzRO9BOySG1fdmA6mtrD2euWxdaxfHT92DuWtWVNlraMg5fDB5xl+9y/p/MU3XGlFYYFVFBvw==",
   "success": true,
   "projectFilePath": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj",
-=======
-  "dgSpecHash": "xAdBowKBe58aLu7FZmGaOJ14TL/ig/EqAAwgfBq4B4R/quF4XdJhjHtV0e8WVnRHQ5JPcqz4T/rLgiB3Bn0jCw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj",
->>>>>>> d2b96dc69e4ce4b1a72056b466007e3a93824fc6
-=======
-  "dgSpecHash": "xAdBowKBe58aLu7FZmGaOJ14TL/ig/EqAAwgfBq4B4R/quF4XdJhjHtV0e8WVnRHQ5JPcqz4T/rLgiB3Bn0jCw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj",
->>>>>>> d2b96dc69e4ce4b1a72056b466007e3a93824fc6
-=======
-  "dgSpecHash": "xAdBowKBe58aLu7FZmGaOJ14TL/ig/EqAAwgfBq4B4R/quF4XdJhjHtV0e8WVnRHQ5JPcqz4T/rLgiB3Bn0jCw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj",
->>>>>>> d2b96dc69e4ce4b1a72056b466007e3a93824fc6
-=======
-  "dgSpecHash": "xAdBowKBe58aLu7FZmGaOJ14TL/ig/EqAAwgfBq4B4R/quF4XdJhjHtV0e8WVnRHQ5JPcqz4T/rLgiB3Bn0jCw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj",
->>>>>>> d2b96dc69e4ce4b1a72056b466007e3a93824fc6
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\DTO\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
