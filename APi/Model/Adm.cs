@@ -49,4 +49,32 @@ public class Adm
             return null;
         }
     }
+
+    public static object findByID(int id)
+    {
+        using (var context = new Context())
+        {
+            var users = context.Adm.FirstOrDefault(d => d.Id == id);
+            return new
+            {
+                Nome = users.Nome,
+                Edv = users.Edv,
+                Senha = users.Senha,
+                Area = users.Area,
+                DataNasc = users.DataNasc,
+                Email = users.Email,
+                Id = id
+            };
+        }
+    }
+
+    public static void update(Adm userDTO, string edv){
+        using(var context = new Context()){
+            var usuario = context.Adm.FirstOrDefault(i => i.Edv == edv);
+            if(userDTO.Senha != null){
+                usuario.Senha = userDTO.Senha;
+            }
+            context.SaveChanges();
+        }
+    }
 }

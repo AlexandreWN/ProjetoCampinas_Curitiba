@@ -11,10 +11,20 @@ import { User } from '../user';
 export class PrimeiroAcessoComponent implements OnInit {
 
   user : User
+  adm : User
 
   constructor(private router: Router) { 
 
     this.user = {
+      id : 0,
+      nome : "",
+      edv: "",
+      senha: "",
+      area: "",
+      email: "",
+      dataNasc: ""
+    }
+    this.adm = {
       id : 0,
       nome : "",
       edv: "",
@@ -51,6 +61,32 @@ export class PrimeiroAcessoComponent implements OnInit {
     .catch(function (error:any) {
       console.log(error);
     });
+
+    let tokenOwner = localStorage.getItem('authOwner');
+    var data4 = JSON.stringify({
+      
+    });
+    let self4 = this;
+    var config4 = {
+      method: 'get',
+      url: 'http://localhost:5051/adm/getById',
+      headers: { 
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + tokenOwner
+      },
+      data : data4
+    };
+
+    axios(config4)
+    .then(function (response:any) {
+      console.log(JSON.stringify(response.data));
+      self4.adm = response.data;
+
+      return self4.adm.edv
+    })
+    .catch(function (error:any) {
+      console.log(error);
+    });
   }
   
   
@@ -62,6 +98,16 @@ export class PrimeiroAcessoComponent implements OnInit {
 
     if(senha?.value == confirmaSenha?.value){
       var data = JSON.stringify({
+        "id": 0,
+        "nome": "",
+        "edv": "",
+        "area": "",
+        "dataNasc": "2022-07-13T13:59:24.745Z",
+        "email": "",
+        "senha": senha?.value
+      })
+
+      var data2 = JSON.stringify({
         "id": 0,
         "nome": "",
         "edv": "",
@@ -88,8 +134,27 @@ export class PrimeiroAcessoComponent implements OnInit {
       self.router.navigate(['/registerUsers'])
     })
     .catch(function (error) {
-      alert("Erro!");
-      console.log(error);
+    });
+
+    var config5 = {
+      method: 'put',
+      url: 'http://localhost:5051/adm/updateSenha/' + this.adm.edv,
+      headers: { 
+        'Content-Type': 'application/json'
+       },
+      data : data2
+
+    }
+
+    let self2 = this;
+
+    axios(config5)
+    .then(function (response) {
+      console.log(JSON.stringify(response.data));
+      alert("Registrado com sucesso!");
+      self2.router.navigate(['/ocorrenciaslist'])
+    })
+    .catch(function (error) {
     });
       
     }
@@ -97,6 +162,8 @@ export class PrimeiroAcessoComponent implements OnInit {
       alert("As senhas não coincidem!");
       this.router.navigate(['trocarSenha']);
     }
+      
+    }
   }
 
-}
+

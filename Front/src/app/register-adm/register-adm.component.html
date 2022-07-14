@@ -1,0 +1,40 @@
+<app-top-bar></app-top-bar>
+
+<div class="titleRegister">
+    <h1>Registrar novo ADM</h1>
+
+</div>
+
+<div class="register">
+   <div class="client">
+    <form>
+        <div class="inputsRegister">
+            <input type="text" id="nome" placeholder="Nome" />
+        </div>
+ 
+        <div class="inputsRegister">
+             <input type="text" id="edv" placeholder="Edv" />
+         </div>
+ 
+         <div class="inputsRegister">
+             <input type="email" id="email" placeholder="Email" />
+         </div>
+ 
+         <div class="inputsRegister">
+             <input type="text" id="area" placeholder="Área" />
+         </div>
+         
+         
+         <div class="inputsRegister">
+             <input type="text" id="date" placeholder="Data de Nascimento"  onfocus="(this.type='date')" />
+         </div>
+ 
+       
+    </form>
+   </div>
+
+    <div class="btnss">
+        <div class="btnAddress1"><button class="btn" type="button" >Cancelar</button></div>
+        <div  class="btnAddress2"><button class="btn" type="button" (click)="save()" >Cadastrar</button></div>
+    </div>
+</div>

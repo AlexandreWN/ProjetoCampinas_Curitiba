@@ -36,6 +36,27 @@ public class AdmController : ControllerBase
         };
     }
 
+    [HttpGet]
+    [Route("getById")]
+    
+    public object getInformations()
+    {
+        var id = Lib.GetIdFromRequest(Request.Headers["Authorization"].ToString());
+        var user = Model.Adm.findByID(id);
+        return user;
+    }
+
+    [HttpPut]
+    [Route("updateSenha/{edv}")]
+
+    public object editSenha([FromBody] Adm userDTO, string edv){
+        Model.Adm.update(userDTO, edv);
+        return new{
+            status = "ok",
+            mensagem = "deu boa"
+        };
+    }
+
     [HttpPost]
     [Route("login")]
     public IActionResult tokenGenerate([FromBody] UserDTO login){

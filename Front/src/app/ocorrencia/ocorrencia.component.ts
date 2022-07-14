@@ -245,6 +245,7 @@ export class OcorrenciaComponent implements OnInit {
     if(option.text == "Falta"){
       this.gamb[0] = 1;
     }
+    
     else{
       this.gamb[0] = 0;
     }
