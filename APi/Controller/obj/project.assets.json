@@ -2809,11 +2809,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\COC2CT\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\OLL2CT\\.nuget\\packages\\": {}
+>>>>>>> e89c2ef7ac73c1443ef44002ace3ece8855c2518
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
       "projectName": "Controller",
       "projectPath": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
@@ -2822,6 +2827,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\COC2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
+      "projectName": "Controller",
+      "projectPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
+      "packagesPath": "C:\\Users\\OLL2CT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Controller\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\OLL2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> e89c2ef7ac73c1443ef44002ace3ece8855c2518
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2835,8 +2850,13 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
               "projectPath": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj"
+=======
+            "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj"
+>>>>>>> e89c2ef7ac73c1443ef44002ace3ece8855c2518
             }
           }
         }

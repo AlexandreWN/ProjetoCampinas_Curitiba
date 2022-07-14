@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "pjnvGldxP2RLSPzRO9BOySG1fdmA6mtrD2euWxdaxfHT92DuWtWVNlraMg5fDB5xl+9y/p/MU3XGlFYYFVFBvw==",
   "success": true,
   "projectFilePath": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj",
+=======
+  "dgSpecHash": "EUCc0hP2k2y8qbw0AdF+X6JwifQ+WZdNmvG8/njxcFaKdzSCrwXAPdj0rVLS7mmkEZYJV+vFAmZ97YkocrJEsw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj",
+>>>>>>> e89c2ef7ac73c1443ef44002ace3ece8855c2518
   "expectedPackageFiles": [],
   "logs": []
 }
