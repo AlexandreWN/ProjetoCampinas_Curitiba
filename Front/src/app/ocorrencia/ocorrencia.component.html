@@ -17,7 +17,7 @@
         </div>
 
         <div class="inputsRegister">
-            <select id="ocorrencia" class="form-select form-select" aria-label="Default select example">
+            <select id="ocorrencia" class="form-select form-select" aria-label="Default select example" (blur)="pegaValor()">
                 <option selected>Selecione o tipo de ocorrencia</option>
                 <option *ngFor="let ocorrencia of ocorrencias" value="{{ocorrencia.id}}">{{ocorrencia.nome}}</option>
               </select>
@@ -29,7 +29,8 @@
             </div>
 
             <div class="inputsRegisterHora">
-                <input type="text" id="horaE" placeholder="Hora Entrada" onfocus="(this.type='time')"/>
+                <input *ngIf="gamb[0] == 1"  disabled type="text" id="horaE" value="00:00" placeholder="Hora Entrada" onfocus="(this.type='time')"/>
+                <input *ngIf="gamb[0] != 1" type="text" id="horaE" placeholder="Hora Entrada" onfocus="(this.type='time')"/>
             </div>
         </div>
 
@@ -39,7 +40,8 @@
             </div>
 
             <div class="inputsRegisterHora">
-                <input type="text" id="horaS" placeholder="Hora Saida" onfocus="(this.type='time')"/>
+                <input *ngIf="gamb[0] == 1"  disabled type="text" id="horaS" value="00:00" placeholder="Hora Saida" onfocus="(this.type='time')"/>
+                <input *ngIf="gamb[0] != 1" type="text" id="horaS" placeholder="Hora Saida" onfocus="(this.type='time')"/>
             </div>
         </div>
  

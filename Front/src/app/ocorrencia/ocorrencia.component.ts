@@ -16,6 +16,8 @@ export class OcorrenciaComponent implements OnInit {
   user : User
   userId : number;
 
+  gamb : Array<number> = []
+
   constructor(private router: Router) {
     let self = this;
     if(localStorage.getItem("authToken") == null && localStorage.getItem("authOwner") == null){
@@ -201,7 +203,6 @@ export class OcorrenciaComponent implements OnInit {
     .catch(function (error) {
       alert("Erro Genérico!");
       console.log(error);
-      self4.gerarPDF(comprovante,dataEntrada?.value,dataSaida?.value,horaEntrada?.value,horaSaida?.value,descricao?.value,self4.user.nome,self4.user.edv,self4.user.area,option?.text)
     });
   }
 
@@ -224,11 +225,11 @@ export class OcorrenciaComponent implements OnInit {
       pdf.text(text, 60, 30);
       pdf.setTextColor("black")
       pdf.text(text1, 30, 40);
-      pdf.text(text2, 120, 40);
-      pdf.text(text3, 30, 50);
-      pdf.text(text4, 30, 60);
-      pdf.text(text5, 30, 70);
-      pdf.text(text6, 30, 80);
+      pdf.text(text2, 30, 50);
+      pdf.text(text3, 30, 60);
+      pdf.text(text4, 30, 70);
+      pdf.text(text5, 30, 80);
+      pdf.text(text6, 30, 90);
       pdf.addImage(img,'png', 10, 6, 30, 10)
 
       pdf.output("dataurlnewwindow");
@@ -237,4 +238,16 @@ export class OcorrenciaComponent implements OnInit {
     
     }
 
+  pegaValor(){
+    let select = document.getElementById("ocorrencia") as HTMLSelectElement;
+    let option = select.options[select.selectedIndex];
+    console.log(option.text)
+    if(option.text == "Falta"){
+      this.gamb[0] = 1;
+    }
+    
+    else{
+      this.gamb[0] = 0;
+    }
+  }
 }

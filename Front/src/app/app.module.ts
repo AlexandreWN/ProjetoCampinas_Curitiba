@@ -13,6 +13,7 @@ import { RouterModule } from '@angular/router';
 
 import { DataTablesModule } from "angular-datatables";
 import { PrimeiroAcessoComponent } from './primeiro-acesso/primeiro-acesso.component';
+import { RegisterAdmComponent } from './register-adm/register-adm.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PrimeiroAcessoComponent } from './primeiro-acesso/primeiro-acesso.compo
     OcorrenciaComponent,
     OcorrenciaHistoricoComponent,
     OcorrenciaListComponent,
-    PrimeiroAcessoComponent
+    PrimeiroAcessoComponent,
+    RegisterAdmComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { PrimeiroAcessoComponent } from './primeiro-acesso/primeiro-acesso.compo
       {path: 'registerUsers', component: RegisterUserComponent},
       {path: 'ocorrenciaslist', component: OcorrenciaListComponent},
       {path: 'historico', component: OcorrenciaHistoricoComponent },
-      {path: 'trocarSenha', component: PrimeiroAcessoComponent}
+      {path: 'trocarSenha', component: PrimeiroAcessoComponent},
+      {path: 'registerAdm', component: RegisterAdmComponent}
     ])
   ],
   providers: [],

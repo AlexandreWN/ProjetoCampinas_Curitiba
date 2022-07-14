@@ -4,11 +4,11 @@ import axios from "axios";
 
 
 @Component({
-  selector: 'app-register-user',
-  templateUrl: './register-user.component.html',
-  styleUrls: ['./register-user.component.css']
+  selector: 'app-register-adm',
+  templateUrl: './register-adm.component.html',
+  styleUrls: ['./register-adm.component.css']
 })
-export class RegisterUserComponent implements OnInit {
+export class RegisterAdmComponent implements OnInit {
 
   constructor(private router: Router) { }
 
@@ -49,7 +49,7 @@ export class RegisterUserComponent implements OnInit {
     let self = this;
     var config = {
       method: 'post',
-      url: 'http://localhost:5051/user/register',
+      url: 'http://localhost:5051/adm/register',
       headers: { 
         'Content-Type': 'application/json'
        },
@@ -68,4 +68,5 @@ export class RegisterUserComponent implements OnInit {
     });
 
   }
+
 }
