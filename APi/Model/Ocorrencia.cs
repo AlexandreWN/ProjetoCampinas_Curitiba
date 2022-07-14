@@ -110,14 +110,6 @@ public class Ocorrencia
             {
                 ocorrencia.DataSaida = ocorrenciaDTO.DataSaida;
             }
-            if(ocorrenciaDTO.Comprovante != null)
-            {
-                ocorrencia.Comprovante = ocorrenciaDTO.Comprovante;
-            }
-            if(ocorrenciaDTO.Documento != null)
-            {
-                ocorrencia.Documento = ocorrenciaDTO.Documento;
-            }
             context.SaveChanges();
         }
     }

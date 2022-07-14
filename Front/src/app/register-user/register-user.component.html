@@ -1,7 +1,8 @@
 <app-top-bar></app-top-bar>
 
 <div class="titleRegister">
-    <h1>Register</h1>
+    <h1>Registrar novo usuário</h1>
+
 </div>
 
 <div class="register">
@@ -16,27 +17,24 @@
          </div>
  
          <div class="inputsRegister">
-             <input type="email" id="email" placeholder="E-mail" />
+             <input type="email" id="email" placeholder="Email" />
          </div>
  
          <div class="inputsRegister">
-             <input type="text" id="area" placeholder="Area" />
+             <input type="text" id="area" placeholder="Área" />
          </div>
          
          
          <div class="inputsRegister">
-             <input type="date" id="date" placeholder="Date of Birth" />
+             <input type="text" id="date" placeholder="Data de Nascimento"  onfocus="(this.type='date')" />
          </div>
  
-         <div class="inputsRegister">
-             <input type="password" id="password" placeholder="Password" />
-         </div>
- 
+       
     </form>
    </div>
 
     <div class="btnss">
-        <div class="btnAddress1"><button class="btn" type="button" >Cancel</button></div>
-        <div  class="btnAddress2"><button class="btn" type="button" (click)="save()" >Save Changes</button></div>
+        <div class="btnAddress1"><button class="btn" type="button" >Cancelar</button></div>
+        <div  class="btnAddress2"><button class="btn" type="button" (click)="save()" >Cadastrar</button></div>
     </div>
 </div>

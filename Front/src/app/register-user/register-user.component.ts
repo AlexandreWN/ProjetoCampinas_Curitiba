@@ -30,7 +30,12 @@ export class RegisterUserComponent implements OnInit {
     let email = document.getElementById("email") as HTMLInputElement;
     let area = document.getElementById("area") as HTMLInputElement;
     let date = document.getElementById("date") as HTMLInputElement;
-    let password = document.getElementById("password") as HTMLInputElement;
+
+    let dataNova = date?.value.substring(0,10).toString();
+    let day = dataNova.substring(8,10).toString();
+    let month = dataNova.substring(5,7).toString();
+    let year = dataNova.substring(0,4).toString();
+    let dataCerta = day + month + year;
 
     var data = JSON.stringify({
       "nome" : nome?.value,
@@ -38,7 +43,7 @@ export class RegisterUserComponent implements OnInit {
       "email" : email?.value,
       "area" : area?.value,
       "dataNasc" : date?.value,
-      "senha" : password?.value
+      "senha" : dataCerta
     })
 
     let self = this;
@@ -55,7 +60,7 @@ export class RegisterUserComponent implements OnInit {
     .then(function (response) {
       console.log(JSON.stringify(response.data));
       alert("Registrado com sucesso!");
-      self.router.navigate(['/registerUsers'])
+      window.location.reload();
     })
     .catch(function (error) {
       alert("Erro!");

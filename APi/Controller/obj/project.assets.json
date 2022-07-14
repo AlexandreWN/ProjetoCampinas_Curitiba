@@ -2809,19 +2809,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nia1ct\\.nuget\\packages\\": {}
+    "C:\\Users\\COC2CT\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
+      "projectUniqueName": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
       "projectName": "Controller",
-      "projectPath": "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
-      "packagesPath": "C:\\Users\\nia1ct\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\Controller\\obj\\",
+      "projectPath": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
+      "packagesPath": "C:\\Users\\COC2CT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Controller\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nia1ct\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\COC2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2835,8 +2835,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\nia1ct\\Desktop\\repositorio\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj"
+            "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj"
             }
           }
         }
@@ -2886,7 +2886,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

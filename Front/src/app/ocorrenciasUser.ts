@@ -1,9 +1,13 @@
+import { Time } from "@angular/common"
+
 export interface OcorrenciasUser{
     id : number,
     descricao : string,
     dataEntrada : Date,
     dataSaida : Date,
-    comprovante : string,
+    horaEntrada : Time,
+    horaSaida : Time,
+    comprovante : Number,
     documento : string,
     ocorrencias : {
         id : number,

@@ -19,7 +19,7 @@
             <td>{{ocorrencia.ocorrencias.nome}}</td>
             <td>{{ocorrencia.dataEntrada | date: "dd/MM/yyyy" }}</td>
             <td class="itens">
-              <a data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="../../assets/icons/simbolo-de-formato-de-arquivo-pdf.png" class="imgtab" /></a>
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="gerarPDF(ocorrencia.comprovante, ocorrencia.dataEntrada.toString(), ocorrencia.dataSaida.toString(), ocorrencia.descricao, ocorrencia.usuario.nome, ocorrencia.usuario.edv, ocorrencia.usuario.area, ocorrencia.ocorrencias.nome)"><img src="../../assets/icons/simbolo-de-formato-de-arquivo-pdf.png" class="imgtab" /></a>
             </td>
           </tr>
         </tbody>

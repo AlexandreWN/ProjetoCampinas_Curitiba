@@ -4,6 +4,7 @@ import { Ocorrencias } from '../ocorrencias';
 import { User } from '../user';
 import { OcorrenciasUser } from '../ocorrenciasUser';
 import { Route, Router } from '@angular/router';
+import jspdf from 'jspdf';
 
 @Component({
   selector: 'app-ocorrencia-historico',
@@ -92,6 +93,38 @@ export class OcorrenciaHistoricoComponent implements OnInit {
     .catch(function (error:any) {
       console.log(error);
     });
+  }
+
+  gerarPDF(comprovante:Number,dataEnt:string,dataSai:string,descricao:string,nome:string,edv:string,area:string,motivo:string) {
+    var img = new Image()
+    img.src = '../../assets/img/bosch.png'
+    var dataEntr=new Date(dataEnt)
+    var text="Comprovante "+comprovante
+    var text1="Colaborador: "+nome
+    var text2="EDV: "+edv
+    var text3="Motivo: "+motivo
+    var horaE = dataEnt[11]+dataEnt[12] + ":" + dataEnt[14] + dataEnt[15];
+    var horaSai =dataSai[11]+dataSai[12] + ":" + dataSai[14] + dataSai[15];
+    var text4="Data de entrada: "+dataEnt[8]+dataEnt[9]+"/"+dataEnt[5]+dataEnt[6]+"/"+dataEnt[2]+dataEnt[3]+ "  "+horaE
+    var text5="Data de saída: "+dataSai[8]+dataSai[9]+"/"+dataSai[5]+dataSai[6]+"/"+dataSai[2]+dataSai[3]+ "  "+horaSai
+    var text6="Descrição da ocorrencia: "+descricao
+    let pdf = new jspdf('p', 'mm', 'a4');
+    pdf.setTextColor("red")
+    pdf.setFont("Times New Roman")
+    pdf.text(text, 60, 30);
+    pdf.setTextColor("black")
+    pdf.text(text1, 30, 40);
+    pdf.text(text2, 30, 50);
+    pdf.text(text3, 30, 60);
+    pdf.text(text4, 30, 70);
+    pdf.text(text5, 30, 80);
+    pdf.text(text6, 30, 90);
+    pdf.addImage(img,'png', 10, 6, 30, 10)
+
+    pdf.output("dataurlnewwindow");
+    var nomepdf="Comprovante "+comprovante+".pdf"
+    pdf.save(nomepdf);
+  
   }
 
 }
