@@ -25,23 +25,25 @@
 
         <div class="inputsRegister">
             <div class="inputsRegisterData">
-                <input type="text" id="dateE" placeholder="Data Entrada" onfocus="(this.type='date')"/>
+                <input *ngIf="gamb[0] != 3" type="text" id="dateE" placeholder="Data Entrada" onfocus="(this.type='date')"/>
+                <input *ngIf="gamb[0] == 3"  disabled type="text" id="dateE" placeholder="Data Entrada" onfocus="(this.type='date')"/>
             </div>
 
             <div class="inputsRegisterHora">
-                <input *ngIf="gamb[0] == 1"  disabled type="text" id="horaE" value="00:00" placeholder="Hora Entrada" onfocus="(this.type='time')"/>
-                <input *ngIf="gamb[0] != 1" type="text" id="horaE" placeholder="Hora Entrada" onfocus="(this.type='time')"/>
+                <input *ngIf="gamb[0] == 1 || gamb[0] == 3 "  disabled type="text" id="horaE" value="00:00" placeholder="Hora Entrada" onfocus="(this.type='time')"/>
+                <input *ngIf="gamb[0] != 1 && gamb[0] != 3" type="text" id="horaE" placeholder="Hora Entrada" onfocus="(this.type='time')"/>
             </div>
         </div>
 
         <div class="inputsRegisterSaida">
             <div class="inputsRegisterData">
-                <input type="text" id="dateS" placeholder="Data Saida" onfocus="(this.type='date')"/>
+                <input *ngIf="gamb[0] != 2" type="text" id="dateS" placeholder="Data Saida" onfocus="(this.type='date')"/>
+                <input *ngIf="gamb[0] == 2" type="text" id="dateS" disabled   placeholder="Data Saida" onfocus="(this.type='date')"/>
             </div>
 
             <div class="inputsRegisterHora">
-                <input *ngIf="gamb[0] == 1"  disabled type="text" id="horaS" value="00:00" placeholder="Hora Saida" onfocus="(this.type='time')"/>
-                <input *ngIf="gamb[0] != 1" type="text" id="horaS" placeholder="Hora Saida" onfocus="(this.type='time')"/>
+                <input *ngIf="gamb[0] == 1 || gamb[0] == 2"  disabled type="text" id="horaS" value="00:00" placeholder="Hora Saida" onfocus="(this.type='time')"/>
+                <input *ngIf="gamb[0] != 1 && gamb[0] != 2" type="text" id="horaS" placeholder="Hora Saida" onfocus="(this.type='time')"/>
             </div>
         </div>
  
