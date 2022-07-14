@@ -87,3 +87,6 @@ table{
     font-size: 14px;
     margin-left: 5%;
 }
+.modal-body select{
+    margin-left: 5%;
+}

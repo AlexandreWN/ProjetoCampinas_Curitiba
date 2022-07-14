@@ -7,4 +7,8 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Model
+<<<<<<< HEAD
 build_property.ProjectDir = c:\Users\COC2CT\Desktop\ProjetoCampinas_Curitiba\APi\Model\
+=======
+build_property.ProjectDir = C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\
+>>>>>>> 0a55e5a5eea3cf22f8db4fe38414b621507d72d2

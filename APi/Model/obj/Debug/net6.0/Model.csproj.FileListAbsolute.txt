@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\Model.deps.json
 C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\Model.dll
 C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\Model.pdb
@@ -15,7 +13,6 @@ C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\obj\Debug
 C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\refint\Model.dll
 C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\Model.pdb
 C:\Users\nia1ct\Desktop\repositorio\ProjetoCampinas_Curitiba\APi\Model\obj\Debug\net6.0\ref\Model.dll
->>>>>>> c8df4e4f19dc3f1a99d0712617dd1d3178ec7f99
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\Model.deps.json
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\Model.dll
 C:\Users\OLL2CT\Desktop\Projetos\ProjetoCampinas_Curitiba\APi\Model\bin\Debug\net6.0\Model.pdb
