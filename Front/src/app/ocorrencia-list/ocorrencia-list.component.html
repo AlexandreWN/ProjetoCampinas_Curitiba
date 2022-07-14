@@ -28,6 +28,7 @@
             <td class="itens">
               <a data-bs-toggle="modal" data-bs-target="#exampleModal2" (click)="pegaId(ocorrencia.id)"  ><img src="../../assets/icons/delete-svgrepo-com.svg" class="imgtab2" /></a>
               <a data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="dadosUser(ocorrencia.descricao, ocorrencia.id, ocorrencia.dataEntrada, ocorrencia.dataSaida, ocorrencia.dataEntrada.toString(), ocorrencia.dataSaida.toString())"><img src="../../assets/icons/edit-pencil-svgrepo-com.svg" class="imgtab" /></a>
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal3" (click)="mandaDoc(ocorrencia.documento)"  ><img src="../../assets/icons/delete-svgrepo-com.svg" class="imgtab2" /></a>
             </td>
           </tr>
         </tbody>
@@ -83,6 +84,23 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
           <button type="button" class="btn btn-primary" (click)="delet()" data-bs-dismiss="modal">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Documento</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="{{caminho}}">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
         </div>
       </div>
     </div>
