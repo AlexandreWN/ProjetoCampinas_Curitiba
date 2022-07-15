@@ -27,9 +27,8 @@
             <td>{{ocorrencia.dataEntrada | date: "dd/MM/yyyy" }}</td>
             <td class="itens">
               <a data-bs-toggle="modal" data-bs-target="#exampleModal2" (click)="pegaId(ocorrencia.id)"  ><img src="../../assets/icons/delete-svgrepo-com.svg" class="imgtab2" /></a>
-              <a data-bs-toggle="modal" data-bs-target="#exampleModal3" (click)="pegaId(ocorrencia.id)"  ><img src="../../assets/img/view.png" class="imgtab3" /></a>
               <a data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="dadosUser(ocorrencia.descricao, ocorrencia.id, ocorrencia.dataEntrada, ocorrencia.dataSaida, ocorrencia.dataEntrada.toString(), ocorrencia.dataSaida.toString())"><img src="../../assets/icons/edit-pencil-svgrepo-com.svg" class="imgtab" /></a>
-              <a data-bs-toggle="modal" data-bs-target="#exampleModal3" (click)="mandaDoc(ocorrencia.documento)"  ><img src="../../assets/icons/delete-svgrepo-com.svg" class="imgtab2" /></a>
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal3" (click)="mandaDoc(ocorrencia.documento)"  ><img src="../../assets/img/view.png" class="imgtab3" /></a>
             </td>
           </tr>
         </tbody>
@@ -99,6 +98,7 @@
         </div>
         <div class="modal-body">
           <img src="{{caminho}}">
+          FATAL ERROR PROXY BOSCH 500
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
