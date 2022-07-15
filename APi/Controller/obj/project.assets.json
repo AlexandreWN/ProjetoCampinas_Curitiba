@@ -2809,19 +2809,46 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\OLL2CT\\.nuget\\packages\\": {}
+=======
+<<<<<<< HEAD
+    "C:\\Users\\COC2CT\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\alexa\\.nuget\\packages\\": {}
+>>>>>>> 17df039fa05b89debd99edec8ffe0f52194b05c6
+>>>>>>> 5cf57598e0285a0bb82f2b0fcb2435a84fc9ef45
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
+=======
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
+      "projectName": "Controller",
+      "projectPath": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
+      "packagesPath": "C:\\Users\\COC2CT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Controller\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\COC2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Área de Trabalho\\Repositorios\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
+>>>>>>> 5cf57598e0285a0bb82f2b0fcb2435a84fc9ef45
       "projectName": "Controller",
       "projectPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Controller\\Controller.csproj",
       "packagesPath": "C:\\Users\\OLL2CT\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Controller\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\OLL2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 17df039fa05b89debd99edec8ffe0f52194b05c6
+>>>>>>> 5cf57598e0285a0bb82f2b0fcb2435a84fc9ef45
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2835,8 +2862,18 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
               "projectPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj"
+=======
+<<<<<<< HEAD
+            "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj"
+=======
+            "C:\\Users\\alexa\\OneDrive\\Área de Trabalho\\Repositorios\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\alexa\\OneDrive\\Área de Trabalho\\Repositorios\\ProjetoCampinas_Curitiba\\APi\\Model\\Model.csproj"
+>>>>>>> 17df039fa05b89debd99edec8ffe0f52194b05c6
+>>>>>>> 5cf57598e0285a0bb82f2b0fcb2435a84fc9ef45
             }
           }
         }
