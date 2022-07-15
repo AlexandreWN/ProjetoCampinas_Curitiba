@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EUCc0hP2k2y8qbw0AdF+X6JwifQ+WZdNmvG8/njxcFaKdzSCrwXAPdj0rVLS7mmkEZYJV+vFAmZ97YkocrJEsw==",
+  "dgSpecHash": "pjnvGldxP2RLSPzRO9BOySG1fdmA6mtrD2euWxdaxfHT92DuWtWVNlraMg5fDB5xl+9y/p/MU3XGlFYYFVFBvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj",
+  "projectFilePath": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\DTO\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
