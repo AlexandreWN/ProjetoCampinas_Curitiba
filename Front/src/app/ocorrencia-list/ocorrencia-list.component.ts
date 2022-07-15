@@ -17,7 +17,7 @@ export class OcorrenciaListComponent implements OnInit{
 
   id : number = -1
   idPegado : number = 0;
-  caminho : string = "";
+  caminho : string | null = "";
   adm : User
 
   constructor(private router: Router) { 
@@ -109,8 +109,6 @@ export class OcorrenciaListComponent implements OnInit{
 
   mandaDoc(documento : string){
     this.caminho = documento;
-    let substring = "unsafe:"
-    console.log(this.caminho);
   }
 
   tiposOcorrencias(){

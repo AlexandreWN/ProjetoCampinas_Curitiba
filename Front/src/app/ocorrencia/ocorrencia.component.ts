@@ -4,21 +4,32 @@ import { Route, Router } from '@angular/router';
 import { Ocorrencias } from '../ocorrencias';
 import { User } from '../user';
 import jspdf from 'jspdf';
+import { event } from 'jquery';
+import { takeLast } from 'rxjs';
+
+declare global {
+  var tal : any;
+}
 
 @Component({
   selector: 'app-ocorrencia',
   templateUrl: './ocorrencia.component.html',
   styleUrls: ['./ocorrencia.component.css']
 })
+
+
 export class OcorrenciaComponent implements OnInit {
 
   ocorrencias : [Ocorrencias] | undefined;
   user : User
   userId : number;
+  documento : any = ""
 
   gamb : Array<number> = []
 
   constructor(private router: Router) {
+    
+    
     let self = this;
     if(localStorage.getItem("authToken") == null && localStorage.getItem("authOwner") == null){
       self.router.navigate(["/"])
@@ -150,6 +161,19 @@ export class OcorrenciaComponent implements OnInit {
     }
   }
 
+  lala(){
+    let anexo = document.getElementById("formFile") as HTMLInputElement;
+    if(!anexo.files) return;
+    var file = anexo.files[0]
+    var fReader = new FileReader();
+    fReader.readAsDataURL(file);
+    fReader.onloadend = function(event){
+      if(!event.target?.result) return;
+      localStorage.removeItem("imagem");
+      localStorage.setItem("imagem", event.target?.result.toString());
+    }
+  }
+
   register(){
     const datinha = new Date().getTime();
     let select = document.getElementById("ocorrencia") as HTMLSelectElement;
@@ -165,13 +189,12 @@ export class OcorrenciaComponent implements OnInit {
     let horaEntrada= document.getElementById("horaE") as HTMLInputElement;
     let horaSaida= document.getElementById("horaS") as HTMLInputElement;
     let descricao = document.getElementById("descricao") as HTMLInputElement;
-    let anexo = document.getElementById("formFile") as HTMLInputElement;
     let comprovante=this.userId*datinha
     var data = JSON.stringify({
       "descricao": descricao?.value,
       "dataEntrada": dataEntrada?.value + "T" + horaEntrada?.value + ":00.000Z",
       "dataSaida": dataSaida?.value + "T" + horaSaida?.value + ":00.000Z",
-      "documento": anexo?.value,
+      "documento": localStorage.getItem("imagem"),
       "comprovante": comprovante,
       "ocorrencias":{
         "id": option?.value,
@@ -200,9 +223,8 @@ export class OcorrenciaComponent implements OnInit {
     let self4 = this;
     axios(config)
     .then(function (response) {
-      console.log(JSON.stringify(response.data));
       alert("Registrado com sucesso!");
-      self4.router.navigate(['/'])
+      
     })
     .catch(function (error) {
       alert("Erro Genérico!");
@@ -245,7 +267,6 @@ export class OcorrenciaComponent implements OnInit {
   pegaValor(){
     let select = document.getElementById("ocorrencia") as HTMLSelectElement;
     let option = select.options[select.selectedIndex];
-    console.log(option.text)
     if(option.text == "Falta"){
       this.gamb[0] = 1;
     }

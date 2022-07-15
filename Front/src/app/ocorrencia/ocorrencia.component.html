@@ -6,7 +6,7 @@
 
 <div class="register">
    <div class="client">
-    <form>
+    <form enctype="multipart/form-data">
 
         <div class="inputsRegister">
             <input type="text" id="nome" [value]="user.nome" disabled/>
@@ -52,7 +52,7 @@
          </div>
 
          <div class="mb-3 inputsRegister">
-            <input class="form-control" type="file" id="formFile">
+            <input class="form-control" type="file" name="file_name" (blur)="lala()" accept="image/*" id="formFile">
           </div>
  
     </form>
