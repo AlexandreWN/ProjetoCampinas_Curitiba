@@ -8,56 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\COC2CT\\.nuget\\packages\\": {}
-=======
-<<<<<<< HEAD
     "C:\\Users\\OLL2CT\\.nuget\\packages\\": {}
-=======
-<<<<<<< HEAD
-    "C:\\Users\\COC2CT\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\alexa\\.nuget\\packages\\": {}
->>>>>>> 17df039fa05b89debd99edec8ffe0f52194b05c6
->>>>>>> 5cf57598e0285a0bb82f2b0fcb2435a84fc9ef45
->>>>>>> 81cd7d11a4f9fd002cb57983ff4a054bc5c8a031
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj",
-=======
-<<<<<<< HEAD
->>>>>>> 81cd7d11a4f9fd002cb57983ff4a054bc5c8a031
-      "projectUniqueName": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj",
-      "projectName": "DTO",
-      "projectPath": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj",
-      "packagesPath": "C:\\Users\\COC2CT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\DTO\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\COC2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-<<<<<<< HEAD
-=======
-=======
-      "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Área de Trabalho\\Repositorios\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj",
->>>>>>> 5cf57598e0285a0bb82f2b0fcb2435a84fc9ef45
       "projectName": "DTO",
       "projectPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\DTO\\DTO.csproj",
       "packagesPath": "C:\\Users\\OLL2CT\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\DTO\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\OLL2CT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 17df039fa05b89debd99edec8ffe0f52194b05c6
->>>>>>> 5cf57598e0285a0bb82f2b0fcb2435a84fc9ef45
->>>>>>> 81cd7d11a4f9fd002cb57983ff4a054bc5c8a031
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -106,7 +69,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\COC2CT\\Desktop\\ProjetoCampinas_Curitiba\\APi\\DTO\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\OLL2CT\\Desktop\\Projetos\\ProjetoCampinas_Curitiba\\APi\\DTO\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }
