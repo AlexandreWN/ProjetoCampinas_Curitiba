@@ -156,6 +156,12 @@ export class OcorrenciaComponent implements OnInit {
     let option = select.options[select.selectedIndex];
     let dataEntrada = document.getElementById("dateE") as HTMLInputElement;
     let dataSaida =document.getElementById("dateS") as HTMLInputElement;
+    if(this.gamb[0] == 2){
+      dataSaida =document.getElementById("dateE") as HTMLInputElement;
+    }
+    else if(this.gamb[0] == 3){
+      dataEntrada = document.getElementById("dateS") as HTMLInputElement;
+    }
     let horaEntrada= document.getElementById("horaE") as HTMLInputElement;
     let horaSaida= document.getElementById("horaS") as HTMLInputElement;
     let descricao = document.getElementById("descricao") as HTMLInputElement;
@@ -196,8 +202,6 @@ export class OcorrenciaComponent implements OnInit {
     .then(function (response) {
       console.log(JSON.stringify(response.data));
       alert("Registrado com sucesso!");
-      self4.pegarDados()
-      self4.gerarPDF(comprovante,dataEntrada?.value,dataSaida?.value,horaEntrada?.value,horaSaida?.value,descricao?.value,self4.user.nome,self4.user.edv,self4.user.area,option?.text)
       self4.router.navigate(['/'])
     })
     .catch(function (error) {
@@ -245,7 +249,15 @@ export class OcorrenciaComponent implements OnInit {
     if(option.text == "Falta"){
       this.gamb[0] = 1;
     }
-    
+    else if(option.text == "Atraso"){
+      this.gamb[0] = 2;
+    }
+    else if(option.text == "Saída Antecipada"){
+      this.gamb[0] = 3;
+    }
+    else if(option.text == "Ausência"){
+      this.gamb[0] = 4;
+    }
     else{
       this.gamb[0] = 0;
     }

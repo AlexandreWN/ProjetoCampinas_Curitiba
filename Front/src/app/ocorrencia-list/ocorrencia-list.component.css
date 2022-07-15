@@ -25,6 +25,23 @@ table{
     margin-left: 5px;
     margin-right: 5px;
 }
+.imgtab3{
+    width: 20px;
+    height:20px;
+    filter: invert(42%) sepia(93%) saturate(1009%) hue-rotate(173deg) brightness(0%) contrast(0%);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.imgtab3:hover{
+    width: 22px;
+    height:22px;
+    filter: invert(0%) sepia(0%) saturate(1009%) hue-rotate(173deg) brightness(0%) contrast(0%);
+    margin-left: 5px;
+    margin-right: 3px;
+    cursor: pointer;
+    margin-bottom: -1px;
+    margin-top: -1px;
+}
 .imgtab:hover{
     width: 22px;
     height:22px;
