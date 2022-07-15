@@ -10,6 +10,8 @@ import { Route, Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
+  cont : number = 0;
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -52,6 +54,7 @@ export class LoginComponent implements OnInit {
     })
     .catch(function (error:any) {
       console.log(error);
+      self.cont++;
     });
 
     var config2 = {
@@ -71,6 +74,12 @@ export class LoginComponent implements OnInit {
     })
     .catch(function (error:any) {
       console.log(error);
+      self.cont++;
+      console.log(self.cont);
+      if(self.cont == 2){
+        alert("Usuário ou senha incorretos!")
+        self.cont = 0;
+      }
     });
 
   }
